@@ -1,0 +1,41 @@
+0
+0.0
+1
+0.3333333333333333
+2
+1.0
+3
+3.0
+4
+0
+1
+2
+3
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "Test.py", line 14, in crash_fun
+    print(i / (4 - i))
+ZeroDivisionError: division by zero
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Test.py", line 37, in <module>
+    main()
+  File "Test.py", line 32, in main
+    catching_wrap()
+  File "Test.py", line 28, in catching_wrap
+    [executor.submit(exception_catching()) for _ in range(5)]
+  File "Test.py", line 28, in <listcomp>
+    [executor.submit(exception_catching()) for _ in range(5)]
+  File "Test.py", line 22, in exception_catching
+    n = f.result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+ZeroDivisionError: division by zero

@@ -1,0 +1,353 @@
+ar
+
+as
+
+jh
+
+ut
+
+hp
+
+kl
+
+la
+
+mp
+
+pb
+
+mz
+
+dl
+
+ap
+
+nl
+
+gj
+
+dn_dd
+
+ch
+
+up
+
+ga
+
+an
+
+sk
+
+wb
+
+mn
+
+hr
+
+tr
+
+mh
+
+ld
+
+ml
+
+rj
+
+jk
+
+ka
+
+br
+
+ct
+
+tn
+
+or
+
+py
+
+tg
+
+tr initial #1 loss=-0.90151783202102
+DONE WITH FIRST FIT
+py initial #1 loss=-0.9700588006806983
+DONE WITH FIRST FIT
+sk initial #1 loss=-0.8628331350270546
+DONE WITH FIRST FIT
+mz initial #1 loss=-0.8292338576033761
+DONE WITH FIRST FIT
+ar initial #1 loss=-0.8822342347746996
+DONE WITH FIRST FIT
+mn initial #1 loss=-0.9204897058540358
+DONE WITH FIRST FIT
+ml initial #1 loss=-0.9214410188480231
+DONE WITH FIRST FIT
+hr initial #1 loss=-0.9510747776799829
+DONE WITH FIRST FIT
+or initial #1 loss=-0.9574473442382478
+DONE WITH FIRST FIT
+as initial #1 loss=-0.9333055260707775
+DONE WITH FIRST FIT
+ap initial #1 loss=-0.9755412476033467
+DONE WITH FIRST FIT
+jk initial #1 loss=-0.9674087498886607
+DONE WITH FIRST FIT
+ct initial #1 loss=-0.9701443187583423
+DONE WITH FIRST FIT
+ka initial #1 loss=-0.9850759748547061
+DONE WITH FIRST FIT
+tn initial #1 loss=-0.9776949126710724
+DONE WITH FIRST FIT
+tg initial #1 loss=-0.9342123272570838
+DONE WITH FIRST FIT
+an initial #1 loss=-0.8282389636395193
+DONE WITH FIRST FIT
+dl initial #1 loss=-0.9752968507819868
+DONE WITH FIRST FIT
+wb initial #1 loss=-0.9532905219021104
+DONE WITH FIRST FIT
+ld initial #1 loss=-0.8139055107689158
+DONE WITH FIRST FIT
+up initial #1 loss=-0.9008680416306181
+DONE WITH FIRST FIT
+ch initial #1 loss=-0.9425472441964815
+DONE WITH FIRST FIT
+nl initial #1 loss=-0.8876580038366858
+DONE WITH FIRST FIT
+hp initial #1 loss=-0.9324529893829578
+DONE WITH FIRST FIT
+kl initial #1 loss=-0.9701652806135932
+DONE WITH FIRST FIT
+ga initial #1 loss=-0.948662825673487
+DONE WITH FIRST FIT
+rj initial #1 loss=-0.9216556135931492
+DONE WITH FIRST FIT
+jh initial #1 loss=-0.9014383366591248
+DONE WITH FIRST FIT
+br initial #1 loss=-0.8302944404142931
+DONE WITH FIRST FIT
+dn_dd initial #1 loss=-0.8304538598987025
+DONE WITH FIRST FIT
+ut initial #1 loss=-0.946576313125897
+DONE WITH FIRST FIT
+mh initial #1 loss=-0.9686647908381
+DONE WITH FIRST FIT
+pb initial #1 loss=-0.9368813336550951
+DONE WITH FIRST FIT
+mp initial #1 loss=-0.9149082669242241
+DONE WITH FIRST FIT
+la initial #1 loss=-0.8199096312633181
+DONE WITH FIRST FIT
+tr reopen #1 loss=-0.47652186950740283
+DONE WITH REOPEN FIT
+inside plot state = tr
+
+107.5 minutes in total for tr
+
+py reopen #1 loss=-0.40620755549046617
+DONE WITH REOPEN FIT
+inside plot state = py
+
+116.5 minutes in total for py
+
+mz reopen #1 loss=-0.12414313536725446
+DONE WITH REOPEN FIT
+inside plot state = mz
+
+117.3 minutes in total for mz
+
+sk reopen #1 loss=-0.34542071874253866
+DONE WITH REOPEN FIT
+inside plot state = sk
+
+117.4 minutes in total for sk
+
+ar reopen #1 loss=-0.45426563688258736
+DONE WITH REOPEN FIT
+inside plot state = ar
+
+119.4 minutes in total for ar
+
+ml reopen #1 loss=-0.31007344747699056
+DONE WITH REOPEN FIT
+inside plot state = ml
+
+119.9 minutes in total for ml
+
+hr reopen #1 loss=1.3899287313359463
+DONE WITH REOPEN FIT
+inside plot state = hr
+
+121.9 minutes in total for hr
+
+mn reopen #1 loss=-0.2710404646861357
+DONE WITH REOPEN FIT
+inside plot state = mn
+
+120.2 minutes in total for mn
+
+or reopen #1 loss=-0.30252059942851806
+DONE WITH REOPEN FIT
+inside plot state = or
+
+122.1 minutes in total for or
+
+ap reopen #1 loss=-0.3214745513259332
+DONE WITH REOPEN FIT
+inside plot state = ap
+
+122.7 minutes in total for ap
+
+as reopen #1 loss=-0.1579784970524262
+DONE WITH REOPEN FIT
+inside plot state = as
+
+122.2 minutes in total for as
+
+ka reopen #1 loss=-0.31080418407984634
+DONE WITH REOPEN FIT
+inside plot state = ka
+
+125.4 minutes in total for ka
+
+tn reopen #1 loss=-0.5197055055710471
+DONE WITH REOPEN FIT
+inside plot state = tn
+
+125.6 minutes in total for tn
+
+dl reopen #1 loss=-0.6620901050999952
+DONE WITH REOPEN FIT
+inside plot state = dl
+
+127.6 minutes in total for dl
+
+tg reopen #1 loss=-0.38246746954920713
+DONE WITH REOPEN FIT
+inside plot state = tg
+
+126.6 minutes in total for tg
+
+up reopen #1 loss=0.20315814353186723
+DONE WITH REOPEN FIT
+inside plot state = up
+
+129.6 minutes in total for up
+
+hp reopen #1 loss=-0.6092567028776872
+DONE WITH REOPEN FIT
+inside plot state = hp
+
+130.1 minutes in total for hp
+
+ct reopen #1 loss=-0.2721765764231706
+DONE WITH REOPEN FIT
+inside plot state = ct
+
+125.1 minutes in total for ct
+
+an reopen #1 loss=-0.2815784201325458
+DONE WITH REOPEN FIT
+inside plot state = an
+
+127.4 minutes in total for an
+
+jk reopen #1 loss=-0.7883025758312164
+DONE WITH REOPEN FIT
+inside plot state = jk
+
+123.6 minutes in total for jk
+
+wb reopen #1 loss=-0.8208164848799948
+DONE WITH REOPEN FIT
+inside plot state = wb
+
+127.6 minutes in total for wb
+
+ch reopen #1 loss=-0.30030164554015343
+DONE WITH REOPEN FIT
+inside plot state = ch
+
+128.5 minutes in total for ch
+
+nl reopen #1 loss=-0.32354569979299497
+DONE WITH REOPEN FIT
+inside plot state = nl
+
+129.8 minutes in total for nl
+
+ld reopen #1 loss=-0.40637120178995717
+DONE WITH REOPEN FIT
+inside plot state = ld
+
+130.3 minutes in total for ld
+
+kl reopen #1 loss=-0.40446596523884376
+DONE WITH REOPEN FIT
+inside plot state = kl
+
+130.4 minutes in total for kl
+
+ga reopen #1 loss=-0.4149385439653231
+DONE WITH REOPEN FIT
+inside plot state = ga
+
+131.1 minutes in total for ga
+
+br reopen #1 loss=-0.6022543980738408
+DONE WITH REOPEN FIT
+inside plot state = br
+
+132.1 minutes in total for br
+
+rj reopen #1 loss=4.325999398932835
+DONE WITH REOPEN FIT
+inside plot state = rj
+
+132.6 minutes in total for rj
+
+jh reopen #1 loss=-0.4056140605624783
+DONE WITH REOPEN FIT
+inside plot state = jh
+
+132.9 minutes in total for jh
+
+dn_dd reopen #1 loss=-0.2928733466512908
+DONE WITH REOPEN FIT
+inside plot state = dn_dd
+
+133.7 minutes in total for dn_dd
+
+ut reopen #1 loss=-0.1684791828292626
+DONE WITH REOPEN FIT
+inside plot state = ut
+
+135.3 minutes in total for ut
+
+mp reopen #1 loss=0.5052110140326914
+DONE WITH REOPEN FIT
+inside plot state = mp
+
+137.8 minutes in total for mp
+
+pb reopen #1 loss=0.2552870409795251
+DONE WITH REOPEN FIT
+inside plot state = pb
+
+137.1 minutes in total for pb
+
+la reopen #1 loss=-0.8218154043130285
+DONE WITH REOPEN FIT
+inside plot state = la
+
+141.4 minutes in total for la
+
+mh reopen #1 loss=-0.33532410902968585
+DONE WITH REOPEN FIT
+inside plot state = mh
+
+135.4 minutes in total for mh
+
+141.382 minutes for all states ending on 2021-12-01

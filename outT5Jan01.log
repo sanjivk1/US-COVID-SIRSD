@@ -1,0 +1,1218 @@
+rj
+
+MT fitting init rj
+ka
+
+MT fitting init ka
+la
+
+MT fitting init la
+ap
+
+MT fitting init ap
+or
+
+MT fitting init or
+ct
+
+MT fitting init ct
+py
+
+MT fitting init py
+hp
+
+MT fitting init hp
+mn
+
+MT fitting init mn
+ga
+
+MT fitting init ga
+jh
+
+MT fitting init jh
+as
+
+MT fitting init as
+ml
+
+MT fitting init ml
+nl
+
+MT fitting init nl
+up
+
+MT fitting init up
+dn_dd
+
+MT fitting init dn_dd
+jk
+
+MT fitting init jk
+tg
+
+MT fitting init tg
+hr
+
+MT fitting init hr
+dl
+
+MT fitting init dl
+kl
+
+MT fitting init kl
+mh
+
+MT fitting init mh
+tn
+
+MT fitting init tn
+ut
+
+MT fitting init ut
+pb
+
+MT fitting init pb
+wb
+
+MT fitting init wb
+gj
+
+MT fitting init gj
+mz
+
+MT fitting init mz
+ch
+
+MT fitting init ch
+mp
+
+MT fitting init mp
+br
+
+MT fitting init br
+tr
+
+MT fitting init tr
+ar
+
+MT fitting init ar
+an
+
+MT fitting init an
+sk
+
+MT fitting init sk
+ld
+
+MT fitting init ld
+fit init # 3 ml
+fit init # 0 ml
+fit init # 1 ml
+fit init # 2 ml
+fit init # 4 ml
+ml initial #1 loss=-0.9193397554803955
+ml initial #2
+ml initial #3
+ml initial #4 loss=-0.9218917507237618
+ml initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ml
+fit reopen # 2 ml
+fit reopen # 1 ml
+fit reopen # 0 ml
+fit reopen # 4 ml
+fit reopen # 3 ml
+fit init # 2 sk
+fit init # 4 sk
+fit init # 3 sk
+fit init # 1 sk
+fit init # 0 sk
+sk initial #1 loss=-0.8611656327208055
+sk initial #2
+sk initial #3 loss=-0.8626473251152351
+sk initial #4
+sk initial #5
+DONE WITH FIRST FIT
+MT fitting reopen sk
+fit init # 3 ar
+fit init # 2 ar
+fit init # 1 ar
+fit init # 4 ar
+fit init # 0 ar
+ar initial #1 loss=-0.8796000150000801
+ar initial #2 loss=-0.8899366921843191
+ar initial #3
+ar initial #4 loss=-0.897549633955427
+ar initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ar
+fit init # 0 mz
+fit init # 4 mz
+fit init # 2 mz
+fit init # 1 mz
+fit init # 3 mz
+mz initial #1 loss=-0.8339168336083765
+mz initial #2
+mz initial #3
+mz initial #4
+mz initial #5
+DONE WITH FIRST FIT
+MT fitting reopen mz
+fit reopen # 4 ar
+fit reopen # 1 ar
+fit reopen # 3 ar
+fit reopen # 2 ar
+fit reopen # 0 ar
+fit reopen # 4 sk
+fit reopen # 1 sk
+fit reopen # 0 sk
+fit reopen # 3 sk
+fit reopen # 2 sk
+fit init # 0 tr
+fit init # 1 tr
+fit init # 2 tr
+fit init # 3 tr
+fit init # 4 tr
+crash in tr
+DONE WITH FIRST FIT
+MT fitting reopen tr
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "Fitting_India_split2.py", line 942, in fit_init
+    Hiding_init1_range])
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_minimize.py", line 618, in minimize
+    callback=callback, **options)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/lbfgsb.py", line 360, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 200, in fun_and_grad
+    self._update_fun()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "Fitting_India_split2.py", line 741, in loss_init
+    release_days1 = math.ceil(1 / h1)
+ValueError: cannot convert float NaN to integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Fitting_India_split2.py", line 1118, in MT_fitting_init
+    para, current_loss = f.result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+ValueError: cannot convert float NaN to integer
+fit reopen # 0 tr
+fit reopen # 1 tr
+fit reopen # 2 tr
+fit reopen # 3 tr
+fit reopen # 4 tr
+fit reopen # 1 mz
+fit reopen # 3 mz
+fit reopen # 2 mz
+fit reopen # 4 mz
+fit reopen # 0 mz
+fit init # 3 mn
+fit init # 4 mn
+fit init # 2 mn
+fit init # 1 mn
+fit init # 0 mn
+mn initial #1 loss=-0.9374488477924087
+mn initial #2 loss=-0.9374488480628552
+mn initial #3
+mn initial #4
+mn initial #5
+DONE WITH FIRST FIT
+MT fitting reopen mn
+fit init # 0 ap
+fit init # 3 ap
+fit init # 4 ap
+fit init # 2 ap
+fit init # 1 ap
+ap initial #1 loss=-0.9715553277304989
+ap initial #2 loss=-0.9753568670816298
+ap initial #3
+ap initial #4 loss=-0.9754854358057905
+ap initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ap
+fit init # 3 or
+fit init # 0 or
+fit init # 1 or
+fit init # 2 or
+fit init # 4 or
+or initial #1 loss=-0.9591666600377703
+or initial #2
+or initial #3
+or initial #4
+or initial #5
+DONE WITH FIRST FIT
+MT fitting reopen or
+fit reopen # 3 mn
+fit reopen # 4 mn
+fit reopen # 1 mn
+fit reopen # 0 mn
+fit reopen # 2 mn
+fit reopen # 1 ap
+fit reopen # 2 ap
+fit reopen # 0 ap
+fit reopen # 4 ap
+fit reopen # 3 ap
+fit init # 4 ld
+fit init # 3 ld
+fit init # 0 ld
+fit init # 2 ld
+fit init # 1 ld
+ld initial #1 loss=-0.8145698574148585
+ld initial #2 loss=-0.8164116137349575
+ld initial #3
+ld initial #4
+ld initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ld
+fit init # 0 ch
+fit init # 2 ch
+fit init # 3 ch
+fit init # 1 ch
+fit init # 4 ch
+ch initial #1 loss=-0.940137802883415
+ch initial #2 loss=-0.9444676618477346
+ch initial #3
+ch initial #4 loss=-0.9464980132504456
+ch initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ch
+fit reopen # 3 ch
+fit reopen # 0 ch
+fit reopen # 2 ch
+fit reopen # 1 ch
+fit reopen # 4 ch
+fit reopen # 3 or
+fit reopen # 2 or
+fit reopen # 1 or
+fit reopen # 4 or
+fit reopen # 0 or
+fit reopen # 4 ld
+fit reopen # 3 ld
+fit reopen # 1 ld
+fit reopen # 0 ld
+fit reopen # 2 ld
+fit init # 2 dn_dd
+fit init # 0 dn_dd
+fit init # 4 dn_dd
+fit init # 1 dn_dd
+fit init # 3 dn_dd
+crash in dn_dd
+DONE WITH FIRST FIT
+MT fitting reopen dn_dd
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "Fitting_India_split2.py", line 942, in fit_init
+    Hiding_init1_range])
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_minimize.py", line 618, in minimize
+    callback=callback, **options)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/lbfgsb.py", line 360, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 200, in fun_and_grad
+    self._update_fun()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "Fitting_India_split2.py", line 741, in loss_init
+    release_days1 = math.ceil(1 / h1)
+ValueError: cannot convert float NaN to integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Fitting_India_split2.py", line 1118, in MT_fitting_init
+    para, current_loss = f.result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+ValueError: cannot convert float NaN to integer
+fit reopen # 0 dn_dd
+fit reopen # 1 dn_dd
+fit reopen # 2 dn_dd
+fit reopen # 4 dn_dd
+fit reopen # 3 dn_dd
+fit init # 2 jk
+fit init # 4 jk
+fit init # 1 jk
+fit init # 3 jk
+fit init # 0 jk
+jk initial #1 loss=-0.9669612763389488
+jk initial #2
+jk initial #3
+jk initial #4 loss=-0.9695147462308505
+jk initial #5
+DONE WITH FIRST FIT
+MT fitting reopen jk
+fit init # 2 hp
+fit init # 1 hp
+fit init # 3 hp
+fit init # 4 hp
+fit init # 0 hp
+hp initial #1 loss=-0.9211709434821128
+hp initial #2 loss=-0.9336788020894429
+hp initial #3
+hp initial #4
+hp initial #5
+DONE WITH FIRST FIT
+MT fitting reopen hp
+fit init # 4 wb
+fit init # 2 wb
+fit init # 3 wb
+fit init # 1 wb
+fit init # 0 wb
+wb initial #1 loss=-0.946844729947533
+wb initial #2 loss=-0.9567040775127985
+wb initial #3
+wb initial #4
+wb initial #5
+DONE WITH FIRST FIT
+MT fitting reopen wb
+fit init # 3 an
+fit init # 1 an
+fit init # 2 an
+fit init # 4 an
+fit init # 0 an
+an initial #1 loss=-0.8255013854159727
+an initial #2
+an initial #3 loss=-0.8278100874939862
+an initial #4 loss=-0.8282332550990702
+an initial #5
+DONE WITH FIRST FIT
+MT fitting reopen an
+fit init # 3 nl
+fit init # 1 nl
+fit init # 0 nl
+fit init # 4 nl
+fit init # 2 nl
+nl initial #1 loss=-0.8874006384920684
+nl initial #2 loss=-0.8883179988095603
+nl initial #3
+nl initial #4
+nl initial #5
+DONE WITH FIRST FIT
+MT fitting reopen nl
+fit reopen # 3 jk
+fit reopen # 0 jk
+fit reopen # 2 jk
+fit reopen # 4 jk
+fit reopen # 1 jk
+fit init # 2 tg
+fit init # 3 tg
+fit init # 1 tg
+fit init # 0 tg
+fit init # 4 tg
+tg initial #1 loss=-0.9142133927607226
+tg initial #2 loss=-0.9342315696074387
+tg initial #3
+tg initial #4
+tg initial #5
+DONE WITH FIRST FIT
+MT fitting reopen tg
+fit init # 3 ka
+fit init # 0 ka
+fit init # 4 ka
+fit init # 1 ka
+fit init # 2 ka
+ka initial #1 loss=-0.9839062168538152
+ka initial #2 loss=-0.9846233386001491
+ka initial #3 loss=-0.984896077849864
+ka initial #4 loss=-0.9850197541970884
+ka initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ka
+fit reopen # 2 hp
+fit reopen # 3 hp
+fit reopen # 0 hp
+fit reopen # 4 hp
+fit reopen # 1 hp
+fit init # 3 kl
+fit init # 4 kl
+fit init # 1 kl
+fit init # 0 kl
+fit init # 2 kl
+kl initial #1 loss=-0.9690679333803471
+kl initial #2 loss=-0.9706397393069252
+kl initial #3
+kl initial #4
+kl initial #5
+DONE WITH FIRST FIT
+MT fitting reopen kl
+fit reopen # 3 nl
+fit reopen # 0 nl
+fit reopen # 4 nl
+fit reopen # 1 nl
+fit reopen # 2 nl
+fit reopen # 3 wb
+fit reopen # 4 wb
+fit reopen # 2 wb
+fit reopen # 1 wb
+fit reopen # 0 wb
+fit reopen # 1 an
+fit reopen # 2 an
+fit reopen # 3 an
+fit reopen # 0 an
+fit reopen # 4 an
+fit reopen # 4 ka
+fit reopen # 2 ka
+fit reopen # 1 ka
+fit reopen # 3 ka
+fit reopen # 0 ka
+fit reopen # 1 tg
+fit reopen # 3 tg
+fit reopen # 2 tg
+fit reopen # 0 tg
+fit reopen # 4 tg
+fit init # 0 ga
+fit init # 4 ga
+fit init # 2 ga
+fit init # 3 ga
+fit init # 1 ga
+crash in ga
+DONE WITH FIRST FIT
+MT fitting reopen ga
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "Fitting_India_split2.py", line 942, in fit_init
+    Hiding_init1_range])
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_minimize.py", line 618, in minimize
+    callback=callback, **options)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/lbfgsb.py", line 360, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 200, in fun_and_grad
+    self._update_fun()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "Fitting_India_split2.py", line 787, in loss_init
+    metric0 = r2_score(weighted_confirmed, weighted_G)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/metrics/_regression.py", line 677, in r2_score
+    y_true, y_pred, multioutput)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/metrics/_regression.py", line 90, in _check_reg_targets
+    y_pred = check_array(y_pred, ensure_2d=False, dtype=dtype)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Fitting_India_split2.py", line 1118, in MT_fitting_init
+    para, current_loss = f.result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+fit reopen # 0 ga
+fit reopen # 1 ga
+fit reopen # 2 ga
+fit reopen # 3 ga
+fit reopen # 4 ga
+fit init # 0 as
+fit init # 4 as
+fit init # 2 as
+fit init # 3 as
+fit init # 1 as
+as initial #1 loss=-0.9309501194874485
+as initial #2
+as initial #3 loss=-0.9330924460014572
+as initial #4 loss=-0.9333054398486336
+as initial #5
+DONE WITH FIRST FIT
+MT fitting reopen as
+fit init # 3 tn
+fit init # 0 tn
+fit init # 4 tn
+fit init # 2 tn
+fit init # 1 tn
+tn initial #1 loss=-0.9809122986312485
+tn initial #2
+tn initial #3 loss=-0.9831320548677852
+tn initial #4
+tn initial #5
+DONE WITH FIRST FIT
+MT fitting reopen tn
+fit reopen # 0 kl
+fit reopen # 3 kl
+fit reopen # 4 kl
+fit reopen # 1 kl
+fit reopen # 2 kl
+fit init # 4 br
+fit init # 2 br
+fit init # 3 br
+fit init # 1 br
+fit init # 0 br
+br initial #1 loss=-0.8324304269808719
+br initial #2
+br initial #3
+br initial #4 loss=-0.8324731286718776
+br initial #5
+DONE WITH FIRST FIT
+MT fitting reopen br
+fit init # 4 dl
+fit init # 2 dl
+fit init # 3 dl
+fit init # 1 dl
+fit init # 0 dl
+dl initial #1 loss=-0.9753943846238214
+dl initial #2 loss=-0.9755446759478056
+dl initial #3
+dl initial #4
+dl initial #5
+DONE WITH FIRST FIT
+MT fitting reopen dl
+fit init # 0 ut
+fit init # 3 ut
+fit init # 2 ut
+fit init # 4 ut
+fit init # 1 ut
+ut initial #1 loss=-0.9471746243936789
+ut initial #2
+ut initial #3
+ut initial #4
+ut initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ut
+fit init # 2 ct
+fit init # 1 ct
+fit init # 4 ct
+fit init # 3 ct
+fit init # 0 ct
+ct initial #1 loss=-0.9712294155753526
+ct initial #2 loss=-0.9735151361742028
+ct initial #3
+ct initial #4
+ct initial #5
+DONE WITH FIRST FIT
+MT fitting reopen ct
+fit init # 3 gj
+fit init # 4 gj
+fit init # 1 gj
+fit init # 2 gj
+fit init # 0 gj
+gj initial #1 loss=-0.9329161991019929
+gj initial #2
+gj initial #3 loss=-0.9335630697837026
+gj initial #4
+gj initial #5 loss=-0.9343244387455608
+DONE WITH FIRST FIT
+MT fitting reopen gj
+fit reopen # 0 as
+fit reopen # 3 as
+fit reopen # 4 as
+fit reopen # 2 as
+fit reopen # 1 as
+fit init # 2 up
+fit init # 3 up
+fit init # 0 up
+fit init # 4 up
+fit init # 1 up
+up initial #1 loss=-0.9013633496996367
+up initial #2 loss=-0.9017076361457697
+up initial #3
+crash in up
+DONE WITH FIRST FIT
+MT fitting reopen up
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "Fitting_India_split2.py", line 942, in fit_init
+    Hiding_init1_range])
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_minimize.py", line 618, in minimize
+    callback=callback, **options)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/lbfgsb.py", line 360, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 200, in fun_and_grad
+    self._update_fun()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "Fitting_India_split2.py", line 741, in loss_init
+    release_days1 = math.ceil(1 / h1)
+ValueError: cannot convert float NaN to integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Fitting_India_split2.py", line 1118, in MT_fitting_init
+    para, current_loss = f.result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+ValueError: cannot convert float NaN to integer
+fit init # 2 hr
+fit init # 4 hr
+fit init # 1 hr
+fit init # 3 hr
+fit init # 0 hr
+hr initial #1 loss=-0.9482913272733762
+hr initial #2 loss=-0.9552156782192545
+hr initial #3
+hr initial #4
+hr initial #5
+DONE WITH FIRST FIT
+MT fitting reopen hr
+fit reopen # 3 tn
+fit reopen # 4 tn
+fit reopen # 1 tn
+fit reopen # 0 tn
+fit reopen # 2 tn
+fit reopen # 0 dl
+fit reopen # 3 dl
+fit reopen # 1 dl
+fit reopen # 4 dl
+fit reopen # 2 dl
+fit init # 4 mp
+fit init # 2 mp
+fit init # 0 mp
+fit init # 3 mp
+fit init # 1 mp
+mp initial #1 loss=-0.9255193677016951
+mp initial #2
+mp initial #3
+mp initial #4
+mp initial #5
+DONE WITH FIRST FIT
+MT fitting reopen mp
+fit reopen # 0 ut
+fit reopen # 3 ut
+fit reopen # 2 ut
+fit reopen # 1 ut
+fit reopen # 4 ut
+fit init # 4 jh
+fit init # 0 jh
+fit init # 3 jh
+fit init # 1 jh
+fit init # 2 jh
+jh initial #1 loss=-0.9001572449559393
+jh initial #2
+jh initial #3 loss=-0.9013188130430093
+jh initial #4
+jh initial #5
+DONE WITH FIRST FIT
+MT fitting reopen jh
+fit reopen # 4 br
+fit reopen # 2 br
+fit reopen # 1 br
+fit reopen # 0 br
+fit reopen # 3 br
+fit reopen # 0 gj
+fit reopen # 1 gj
+fit reopen # 2 gj
+fit reopen # 3 gj
+fit reopen # 4 gj
+fit reopen # 3 ct
+fit reopen # 4 ct
+fit reopen # 2 ct
+fit reopen # 1 ct
+fit reopen # 0 ct
+fit reopen # 1 up
+fit reopen # 0 up
+fit reopen # 4 up
+fit reopen # 2 up
+fit reopen # 3 up
+fit reopen # 0 hr
+fit reopen # 4 hr
+fit reopen # 2 hr
+fit reopen # 1 hr
+fit reopen # 3 hr
+fit init # 4 rj
+fit init # 2 rj
+fit init # 1 rj
+fit init # 3 rj
+fit init # 0 rj
+rj initial #1 loss=-0.913995789075607
+rj initial #2
+rj initial #3 loss=-0.9196192570389337
+rj initial #4 loss=-0.9215234975813118
+rj initial #5
+DONE WITH FIRST FIT
+MT fitting reopen rj
+fit reopen # 3 mp
+fit reopen # 2 mp
+fit reopen # 4 mp
+fit reopen # 1 mp
+fit reopen # 0 mp
+fit init # 3 py
+fit init # 0 py
+fit init # 1 py
+fit init # 2 py
+fit init # 4 py
+py initial #1 loss=-0.9715640996054405
+py initial #2 loss=-0.9719351604292362
+py initial #3
+py initial #4 loss=-0.9719887249890834
+py initial #5
+DONE WITH FIRST FIT
+MT fitting reopen py
+fit reopen # 0 jh
+fit reopen # 3 jh
+fit reopen # 2 jh
+fit reopen # 4 jh
+fit reopen # 1 jh
+fit init # 4 mh
+fit init # 0 mh
+fit init # 1 mh
+fit init # 3 mh
+fit init # 2 mh
+mh initial #1 loss=-0.9682835001701969
+mh initial #2 loss=-0.9690941090333485
+mh initial #3
+mh initial #4 loss=-0.9691816675363747
+mh initial #5
+DONE WITH FIRST FIT
+MT fitting reopen mh
+fit reopen # 3 rj
+fit reopen # 4 rj
+fit reopen # 0 rj
+fit reopen # 1 rj
+fit reopen # 2 rj
+fit reopen # 0 py
+fit reopen # 3 py
+fit reopen # 4 py
+fit reopen # 1 py
+fit reopen # 2 py
+fit reopen # 2 mh
+fit reopen # 4 mh
+fit reopen # 1 mh
+fit reopen # 3 mh
+fit reopen # 0 mh
+fit init # 4 la
+fit init # 3 la
+fit init # 2 la
+fit init # 1 la
+fit init # 0 la
+crash in la
+DONE WITH FIRST FIT
+MT fitting reopen la
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "Fitting_India_split2.py", line 942, in fit_init
+    Hiding_init1_range])
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_minimize.py", line 618, in minimize
+    callback=callback, **options)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/lbfgsb.py", line 360, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 200, in fun_and_grad
+    self._update_fun()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/cc/.local/lib/python3.6/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "Fitting_India_split2.py", line 787, in loss_init
+    metric0 = r2_score(weighted_confirmed, weighted_G)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/metrics/_regression.py", line 677, in r2_score
+    y_true, y_pred, multioutput)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/metrics/_regression.py", line 90, in _check_reg_targets
+    y_pred = check_array(y_pred, ensure_2d=False, dtype=dtype)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/cc/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "Fitting_India_split2.py", line 1118, in MT_fitting_init
+    para, current_loss = f.result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+fit reopen # 0 la
+fit reopen # 1 la
+fit reopen # 2 la
+fit reopen # 3 la
+fit reopen # 4 la
+fit init # 2 pb
+fit init # 3 pb
+fit init # 1 pb
+fit init # 4 pb
+fit init # 0 pb
+pb initial #1 loss=-0.9416594032233905
+pb initial #2 loss=-0.9444501211991349
+pb initial #3
+pb initial #4
+pb initial #5
+DONE WITH FIRST FIT
+MT fitting reopen pb
+fit reopen # 2 pb
+fit reopen # 0 pb
+fit reopen # 4 pb
+fit reopen # 1 pb
+fit reopen # 3 pb
+ml reopen #1 loss=-0.31009467694612725
+ml reopen #2 loss=-0.3100946769557837
+ml reopen #3 loss=-0.3100946769572233
+ml reopen #4
+ml reopen #5
+DONE WITH REOPEN FIT
+inside plot state = ml
+
+331.8 minutes in total for ml
+
+sk reopen #1 loss=-0.26074286002189395
+sk reopen #2
+sk reopen #3
+sk reopen #4 loss=-0.2607428600227141
+sk reopen #5
+DONE WITH REOPEN FIT
+inside plot state = sk
+
+339.6 minutes in total for sk
+
+ar reopen #1 loss=-0.464674023421244
+ar reopen #2 loss=-0.46467402344213765
+ar reopen #3 loss=-0.4646740234474726
+ar reopen #4 loss=-0.4646740234499569
+ar reopen #5
+DONE WITH REOPEN FIT
+inside plot state = ar
+
+339.3 minutes in total for ar
+
+mz reopen #1 loss=-0.37065469933987555
+mz reopen #2 loss=-0.37065469934487394
+mz reopen #3
+mz reopen #4
+mz reopen #5
+DONE WITH REOPEN FIT
+inside plot state = mz
+
+344.8 minutes in total for mz
+
+mn reopen #1 loss=-0.26514855161193746
+mn reopen #2 loss=-0.26514855161239775
+mn reopen #3
+mn reopen #4
+mn reopen #5 loss=-0.2651485516127765
+DONE WITH REOPEN FIT
+inside plot state = mn
+
+353.9 minutes in total for mn
+
+ap reopen #1 loss=-0.3154052654270521
+ap reopen #2
+ap reopen #3
+ap reopen #4 loss=-0.31540526543084585
+ap reopen #5
+DONE WITH REOPEN FIT
+inside plot state = ap
+
+354.1 minutes in total for ap
+
+ch reopen #1 loss=-0.2990425063805356
+ch reopen #2
+ch reopen #3
+ch reopen #4
+ch reopen #5 loss=-0.29904250638080904
+DONE WITH REOPEN FIT
+inside plot state = ch
+
+360.0 minutes in total for ch
+
+ld reopen #1 loss=-0.35983229441762593
+ld reopen #2
+ld reopen #3
+ld reopen #4
+ld reopen #5
+DONE WITH REOPEN FIT
+inside plot state = ld
+
+362.0 minutes in total for ld
+
+or reopen #1 loss=-0.2840856132126071
+or reopen #2
+or reopen #3
+or reopen #4 loss=-0.28408561321276316
+or reopen #5
+DONE WITH REOPEN FIT
+inside plot state = or
+
+360.2 minutes in total for or
+
+jk reopen #1 loss=-0.8613319097577026
+jk reopen #2 loss=-0.8613319097600902
+jk reopen #3 loss=-0.8613319097619344
+jk reopen #4
+jk reopen #5
+DONE WITH REOPEN FIT
+inside plot state = jk
+
+373.7 minutes in total for jk
+
+hp reopen #1 loss=-0.6173645336119082
+hp reopen #2 loss=-0.6173645336121627
+hp reopen #3
+hp reopen #4 loss=-0.6173645336121745
+hp reopen #5
+DONE WITH REOPEN FIT
+inside plot state = hp
+
+375.3 minutes in total for hp
+
+nl reopen #1 loss=-0.34087010028071496
+nl reopen #2
+nl reopen #3
+nl reopen #4
+nl reopen #5
+DONE WITH REOPEN FIT
+inside plot state = nl
+
+377.9 minutes in total for nl
+
+wb reopen #1 loss=-0.8555298204091022
+wb reopen #2 loss=-0.8555346729458888
+wb reopen #3 loss=-0.8555346729459249
+wb reopen #4
+wb reopen #5
+DONE WITH REOPEN FIT
+inside plot state = wb
+
+378.5 minutes in total for wb
+
+an reopen #1 loss=-0.29559536882398063
+an reopen #2 loss=-0.2955953689005204
+an reopen #3
+an reopen #4 loss=-0.29559536890946475
+an reopen #5
+DONE WITH REOPEN FIT
+inside plot state = an
+
+378.8 minutes in total for an
+
+ka reopen #1 loss=-0.300684725230106
+ka reopen #2 loss=-0.30071948439117485
+ka reopen #3
+ka reopen #4
+ka reopen #5
+DONE WITH REOPEN FIT
+inside plot state = ka
+
+379.0 minutes in total for ka
+
+kl reopen #1 loss=-0.37019978184094404
+kl reopen #2 loss=-0.3701997818409638
+kl reopen #3
+kl reopen #4 loss=-0.3701997818409899
+kl reopen #5
+DONE WITH REOPEN FIT
+inside plot state = kl
+
+380.8 minutes in total for kl
+
+tg reopen #1 loss=-0.5673845928983476
+tg reopen #2 loss=-0.5673845928983743
+tg reopen #3
+tg reopen #4
+tg reopen #5
+DONE WITH REOPEN FIT
+inside plot state = tg
+
+379.3 minutes in total for tg
+
+as reopen #1 loss=-0.16517742521729728
+as reopen #2
+as reopen #3 loss=-0.165177425217438
+as reopen #4
+as reopen #5
+DONE WITH REOPEN FIT
+inside plot state = as
+
+383.3 minutes in total for as
+
+tn reopen #1 loss=-0.5631494888609763
+tn reopen #2 loss=-0.5631494888752432
+tn reopen #3
+tn reopen #4
+tn reopen #5
+DONE WITH REOPEN FIT
+inside plot state = tn
+
+384.3 minutes in total for tn
+
+dl reopen #1 loss=-0.6489649224370984
+dl reopen #2
+dl reopen #3
+dl reopen #4
+dl reopen #5
+DONE WITH REOPEN FIT
+inside plot state = dl
+
+385.4 minutes in total for dl
+
+ut reopen #1 loss=-0.4100813116618118
+ut reopen #2 loss=-0.41008132056061
+ut reopen #3 loss=-0.4100813651547457
+ut reopen #4
+ut reopen #5 loss=-0.41008138183997345
+DONE WITH REOPEN FIT
+inside plot state = ut
+
+386.6 minutes in total for ut
+
+br reopen #1 loss=0.3380736365868093
+br reopen #2 loss=0.33806260843348657
+br reopen #3 loss=0.3380626084194577
+br reopen #4
+br reopen #5
+DONE WITH REOPEN FIT
+inside plot state = br
+
+387.2 minutes in total for br
+
+gj reopen #1 loss=-0.7761080924731605
+gj reopen #2 loss=-0.7761080924818397
+gj reopen #3 loss=-0.776108092523383
+gj reopen #4
+gj reopen #5 loss=-0.776108092525261
+DONE WITH REOPEN FIT
+inside plot state = gj
+
+387.4 minutes in total for gj
+
+ct reopen #1 loss=-0.5313454027619962
+ct reopen #2
+ct reopen #3
+ct reopen #4
+ct reopen #5
+DONE WITH REOPEN FIT
+inside plot state = ct
+
+387.6 minutes in total for ct
+
+up reopen #1 loss=-0.15936113257767337
+up reopen #2 loss=-0.15936113264173868
+up reopen #3 loss=-0.15938075685271544
+up reopen #4
+up reopen #5 loss=-0.1593807569346152
+DONE WITH REOPEN FIT
+inside plot state = up
+
+387.9 minutes in total for up
+
+hr reopen #1 loss=-0.1777474800468006
+hr reopen #2 loss=-0.1777474800565683
+hr reopen #3
+hr reopen #4
+hr reopen #5
+DONE WITH REOPEN FIT
+inside plot state = hr
+
+387.9 minutes in total for hr
+
+mp reopen #1 loss=0.17169133447337176
+mp reopen #2
+mp reopen #3
+mp reopen #4 loss=0.17169133446443102
+mp reopen #5
+DONE WITH REOPEN FIT
+inside plot state = mp
+
+389.6 minutes in total for mp
+
+jh reopen #1 loss=-0.5393599025635246
+jh reopen #2
+jh reopen #3
+jh reopen #4
+jh reopen #5
+DONE WITH REOPEN FIT
+inside plot state = jh
+
+390.4 minutes in total for jh
+
+py reopen #1 loss=-0.41348701303092633
+py reopen #2 loss=-0.413487013031781
+py reopen #3 loss=-0.41348701303295093
+py reopen #4
+py reopen #5
+DONE WITH REOPEN FIT
+inside plot state = py
+
+392.2 minutes in total for py
+
+rj reopen #1 loss=0.7934171998618218
+rj reopen #2 loss=0.7934171990011829
+rj reopen #3 loss=0.7934171989677711
+rj reopen #4
+rj reopen #5
+DONE WITH REOPEN FIT
+inside plot state = rj
+
+391.0 minutes in total for rj
+
+mh reopen #1 loss=-0.3108784607366309
+mh reopen #2
+mh reopen #3
+mh reopen #4
+mh reopen #5
+DONE WITH REOPEN FIT
+inside plot state = mh
+
+393.5 minutes in total for mh
+
+pb reopen #1 loss=-0.4534973803179747
+pb reopen #2 loss=-0.45349738036099163
+pb reopen #3 loss=-0.45349738049652294
+pb reopen #4
+pb reopen #5
+DONE WITH REOPEN FIT
+inside plot state = pb
+
+397.2 minutes in total for pb
+
+397.247 minutes for all states ending on 2021-12-15

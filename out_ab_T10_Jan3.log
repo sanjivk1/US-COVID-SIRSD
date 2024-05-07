@@ -1,0 +1,1801 @@
+tg
+
+MT fitting init tg
+jk
+
+MT fitting init jk
+kl
+
+MT fitting init kl
+pb
+
+MT fitting init pb
+ap
+
+MT fitting init ap
+mh
+
+MT fitting init mh
+ka
+
+MT fitting init ka
+tn
+
+MT fitting init tn
+la
+
+MT fitting init la
+rj
+
+MT fitting init rj
+ut
+
+MT fitting init ut
+or
+
+MT fitting init or
+ch
+
+MT fitting init ch
+wb
+
+MT fitting init wb
+hp
+
+MT fitting init hp
+gj
+
+MT fitting init gj
+up
+
+MT fitting init up
+jh
+
+MT fitting init jh
+ct
+
+MT fitting init ct
+br
+
+MT fitting init br
+mp
+
+MT fitting init mp
+ga
+
+MT fitting init ga
+tr
+
+MT fitting init tr
+mn
+
+MT fitting init mn
+nl
+
+MT fitting init nl
+dn_dd
+
+MT fitting init dn_dd
+ld
+
+MT fitting init ld
+sk
+
+MT fitting init sk
+an
+
+MT fitting init an
+py
+
+MT fitting init py
+hr
+
+MT fitting init hr
+dl
+
+MT fitting init dl
+as
+
+MT fitting init as
+ar
+
+MT fitting init ar
+ml
+
+MT fitting init ml
+mz
+
+MT fitting init mz
+fit init # 6 dn_dd
+fit init # 9 dn_dd
+fit init # 2 dn_dd
+fit init # 8 dn_dd
+fit init # 4 dn_dd
+fit init # 0 dn_dd
+fit init # 3 dn_dd
+fit init # 7 dn_dd
+fit init # 5 dn_dd
+fit init # 1 dn_dd
+dn_dd initial #1 loss=-0.8542264579924094
+dn_dd initial #2 loss=-0.8543093446446999
+dn_dd initial #3
+dn_dd initial #4
+dn_dd initial #5
+dn_dd initial #6
+dn_dd initial #7
+dn_dd initial #8
+dn_dd initial #9 loss=-0.8544552182362537
+dn_dd initial #10
+DONE WITH FIRST FIT dn_dd
+MT fitting reopen dn_dd
+fit reopen # 4 dn_dd
+fit reopen # 7 dn_dd
+fit reopen # 5 dn_dd
+fit reopen # 1 dn_dd
+fit reopen # 6 dn_dd
+fit reopen # 8 dn_dd
+fit reopen # 2 dn_dd
+fit reopen # 0 dn_dd
+fit reopen # 9 dn_dd
+fit reopen # 3 dn_dd
+fit init # 1 ar
+fit init # 0 ar
+fit init # 8 ar
+fit init # 6 ar
+fit init # 2 ar
+fit init # 3 ar
+fit init # 5 ar
+fit init # 7 ar
+fit init # 4 ar
+fit init # 9 ar
+ar initial #1 loss=-0.9302800853716022
+ar initial #2 loss=-0.9310341869925299
+ar initial #3
+ar initial #4 loss=-0.9312471197830522
+ar initial #5
+ar initial #6
+ar initial #7
+ar initial #8
+ar initial #9
+ar initial #10
+DONE WITH FIRST FIT ar
+MT fitting reopen ar
+fit init # 0 as
+fit init # 9 as
+fit init # 1 as
+fit init # 8 as
+fit init # 5 as
+fit init # 7 as
+fit init # 2 as
+fit init # 4 as
+fit init # 3 as
+fit init # 6 as
+as initial #1 loss=-0.9729586688774965
+as initial #2 loss=-0.972991478953852
+as initial #3 loss=-0.9730300739933311
+as initial #4 loss=-0.9730470254687469
+as initial #5
+as initial #6 loss=-0.9730603245859933
+as initial #7
+as initial #8
+as initial #9
+as initial #10
+DONE WITH FIRST FIT as
+MT fitting reopen as
+fit init # 8 ml
+fit init # 0 ml
+fit init # 9 ml
+fit init # 2 ml
+fit init # 5 ml
+fit init # 7 ml
+fit init # 3 ml
+fit init # 1 ml
+fit init # 4 ml
+fit init # 6 ml
+ml initial #1 loss=-0.9584814839236223
+ml initial #2 loss=-0.9597838333515127
+ml initial #3
+ml initial #4
+ml initial #5
+ml initial #6
+ml initial #7
+ml initial #8
+ml initial #9
+ml initial #10
+DONE WITH FIRST FIT ml
+MT fitting reopen ml
+fit init # 9 tr
+fit init # 1 tr
+fit init # 6 tr
+fit init # 4 tr
+fit init # 8 tr
+fit init # 3 tr
+fit init # 0 tr
+fit init # 2 tr
+fit init # 7 tr
+fit init # 5 tr
+tr initial #1 loss=-0.9423860009363967
+tr initial #2
+tr initial #3 loss=-0.9424219204182591
+tr initial #4
+tr initial #5
+tr initial #6
+tr initial #7 loss=-0.9424330285391356
+tr initial #8 loss=-0.9424802491770159
+tr initial #9
+tr initial #10
+DONE WITH FIRST FIT tr
+MT fitting reopen tr
+fit reopen # 4 ar
+fit reopen # 3 ar
+fit reopen # 9 ar
+fit reopen # 0 ar
+fit reopen # 7 ar
+fit reopen # 6 ar
+fit reopen # 5 ar
+fit reopen # 2 ar
+fit reopen # 1 ar
+fit reopen # 8 ar
+fit reopen # 1 as
+fit reopen # 5 as
+fit reopen # 4 as
+fit reopen # 7 as
+fit reopen # 3 as
+fit reopen # 8 as
+fit reopen # 0 as
+fit reopen # 2 as
+fit reopen # 6 as
+fit reopen # 9 as
+fit reopen # 2 ml
+fit reopen # 7 ml
+fit reopen # 9 ml
+fit reopen # 0 ml
+fit reopen # 6 ml
+fit reopen # 8 ml
+fit reopen # 3 ml
+fit reopen # 5 ml
+fit reopen # 1 ml
+fit reopen # 4 ml
+fit init # 0 ap
+fit init # 7 ap
+fit init # 1 ap
+fit init # 9 ap
+fit init # 2 ap
+fit init # 4 ap
+fit init # 3 ap
+fit init # 5 ap
+fit init # 8 ap
+fit init # 6 ap
+ap initial #1 loss=-0.9815842413506737
+ap initial #2 loss=-0.9818171623548084
+ap initial #3
+ap initial #4
+ap initial #5
+ap initial #6
+ap initial #7
+ap initial #8
+ap initial #9
+ap initial #10
+DONE WITH FIRST FIT ap
+MT fitting reopen ap
+fit init # 3 dl
+fit init # 8 dl
+fit init # 9 dl
+fit init # 2 dl
+fit init # 0 dl
+fit init # 5 dl
+fit init # 7 dl
+fit init # 1 dl
+fit init # 4 dl
+fit init # 6 dl
+dl initial #1 loss=-0.9772348210127785
+dl initial #2 loss=-0.9777698861541532
+dl initial #3
+dl initial #4
+dl initial #5
+dl initial #6
+dl initial #7
+dl initial #8
+dl initial #9
+dl initial #10
+DONE WITH FIRST FIT dl
+MT fitting reopen dl
+fit reopen # 2 tr
+fit reopen # 7 tr
+fit reopen # 1 tr
+fit reopen # 6 tr
+fit reopen # 9 tr
+fit reopen # 4 tr
+fit reopen # 0 tr
+fit reopen # 5 tr
+fit reopen # 3 tr
+fit reopen # 8 tr
+fit init # 6 mn
+fit init # 5 mn
+fit init # 7 mn
+fit init # 1 mn
+fit init # 4 mn
+fit init # 3 mn
+fit init # 9 mn
+fit init # 0 mn
+fit init # 2 mn
+fit init # 8 mn
+mn initial #1 loss=-0.9688238960924881
+mn initial #2 loss=-0.9690593522585383
+mn initial #3 loss=-0.9693203900543248
+mn initial #4
+mn initial #5
+mn initial #6 loss=-0.9693478477360695
+mn initial #7 loss=-0.9695946780119402
+mn initial #8
+mn initial #9
+mn initial #10 loss=-0.9696498090310309
+DONE WITH FIRST FIT mn
+MT fitting reopen mn
+fit reopen # 1 dl
+fit reopen # 0 dl
+fit reopen # 5 dl
+fit reopen # 4 dl
+fit reopen # 3 dl
+fit reopen # 7 dl
+fit reopen # 6 dl
+fit reopen # 8 dl
+fit reopen # 9 dl
+fit reopen # 2 dl
+fit reopen # 6 ap
+fit reopen # 3 ap
+fit reopen # 7 ap
+fit reopen # 0 ap
+fit reopen # 5 ap
+fit reopen # 2 ap
+fit reopen # 4 ap
+fit reopen # 8 ap
+fit reopen # 1 ap
+fit reopen # 9 ap
+fit init # 5 mz
+fit init # 7 mz
+fit init # 0 mz
+fit init # 2 mz
+fit init # 9 mz
+fit init # 8 mz
+fit init # 4 mz
+fit init # 3 mz
+fit init # 6 mz
+fit init # 1 mz
+mz initial #1 loss=-0.891119056241845
+mz initial #2
+mz initial #3
+mz initial #4
+mz initial #5 loss=-0.8912546683686875
+mz initial #6
+mz initial #7
+mz initial #8
+mz initial #9 loss=-0.891647079980677
+mz initial #10
+DONE WITH FIRST FIT mz
+MT fitting reopen mz
+fit reopen # 5 mn
+fit reopen # 3 mn
+fit reopen # 9 mn
+fit reopen # 1 mn
+fit reopen # 8 mn
+fit reopen # 0 mn
+fit reopen # 2 mn
+fit reopen # 6 mn
+fit reopen # 7 mn
+fit reopen # 4 mn
+fit init # 2 sk
+fit init # 4 sk
+fit init # 9 sk
+fit init # 8 sk
+fit init # 1 sk
+fit init # 0 sk
+fit init # 5 sk
+fit init # 6 sk
+fit init # 3 sk
+fit init # 7 sk
+sk initial #1 loss=-0.8905474792373137
+sk initial #2 loss=-0.8912217521578607
+sk initial #3
+sk initial #4 loss=-0.8913445760966751
+sk initial #5
+sk initial #6
+sk initial #7 loss=-0.8913784874458753
+sk initial #8
+sk initial #9 loss=-0.8913836606809071
+sk initial #10
+DONE WITH FIRST FIT sk
+MT fitting reopen sk
+fit init # 7 ct
+fit init # 8 ct
+fit init # 5 ct
+fit init # 0 ct
+fit init # 2 ct
+fit init # 9 ct
+fit init # 3 ct
+fit init # 4 ct
+fit init # 1 ct
+fit init # 6 ct
+ct initial #1 loss=-0.9781030307122478
+ct initial #2
+ct initial #3
+ct initial #4
+ct initial #5
+ct initial #6
+ct initial #7 loss=-0.9790276332814999
+ct initial #8
+ct initial #9
+ct initial #10
+DONE WITH FIRST FIT ct
+MT fitting reopen ct
+fit reopen # 2 mz
+fit reopen # 6 mz
+fit reopen # 4 mz
+fit reopen # 1 mz
+fit reopen # 5 mz
+fit reopen # 9 mz
+fit reopen # 0 mz
+fit reopen # 7 mz
+fit reopen # 8 mz
+fit reopen # 3 mz
+fit reopen # 8 sk
+fit reopen # 3 sk
+fit reopen # 2 sk
+fit reopen # 9 sk
+fit reopen # 0 sk
+fit reopen # 5 sk
+fit reopen # 7 sk
+fit reopen # 4 sk
+fit reopen # 6 sk
+fit reopen # 1 sk
+fit init # 3 ka
+fit init # 8 ka
+fit init # 4 ka
+fit init # 9 ka
+fit init # 7 ka
+fit init # 1 ka
+fit init # 0 ka
+fit init # 5 ka
+fit init # 6 ka
+fit init # 2 ka
+ka initial #1 loss=-0.9878885601199601
+ka initial #2
+ka initial #3
+ka initial #4 loss=-0.9879311184988854
+ka initial #5
+ka initial #6
+ka initial #7
+ka initial #8
+ka initial #9
+ka initial #10
+DONE WITH FIRST FIT ka
+MT fitting reopen ka
+fit init # 3 nl
+fit init # 8 nl
+fit init # 2 nl
+fit init # 7 nl
+fit init # 9 nl
+fit init # 0 nl
+fit init # 1 nl
+fit init # 5 nl
+fit init # 6 nl
+fit init # 4 nl
+nl initial #1 loss=-0.9352599571068968
+nl initial #2 loss=-0.9356008355316492
+nl initial #3
+nl initial #4
+nl initial #5 loss=-0.9357638627463699
+nl initial #6
+nl initial #7
+nl initial #8
+nl initial #9
+nl initial #10
+DONE WITH FIRST FIT nl
+MT fitting reopen nl
+fit reopen # 0 ct
+fit reopen # 6 ct
+fit reopen # 8 ct
+fit reopen # 7 ct
+fit reopen # 4 ct
+fit reopen # 1 ct
+fit reopen # 3 ct
+fit reopen # 5 ct
+fit reopen # 2 ct
+fit reopen # 9 ct
+fit init # 2 jk
+fit init # 3 jk
+fit init # 7 jk
+fit init # 9 jk
+fit init # 6 jk
+fit init # 5 jk
+fit init # 4 jk
+fit init # 8 jk
+fit init # 1 jk
+fit init # 0 jk
+jk initial #1 loss=-0.981221559947782
+jk initial #2
+jk initial #3 loss=-0.9812728831516748
+jk initial #4
+jk initial #5 loss=-0.9814682486266779
+jk initial #6
+jk initial #7 loss=-0.9815775867026022
+jk initial #8
+jk initial #9
+jk initial #10
+DONE WITH FIRST FIT jk
+MT fitting reopen jk
+fit init # 7 hr
+fit init # 1 hr
+fit init # 2 hr
+fit init # 5 hr
+fit init # 4 hr
+fit init # 6 hr
+fit init # 9 hr
+fit init # 8 hr
+fit init # 3 hr
+fit init # 0 hr
+hr initial #1 loss=-0.9786711361449845
+hr initial #2 loss=-0.9809381014001713
+hr initial #3
+hr initial #4
+hr initial #5
+hr initial #6
+hr initial #7 loss=-0.9811728915203861
+hr initial #8
+hr initial #9
+hr initial #10
+DONE WITH FIRST FIT hr
+MT fitting reopen hr
+fit init # 9 hp
+fit init # 3 hp
+fit init # 2 hp
+fit init # 5 hp
+fit init # 8 hp
+fit init # 6 hp
+fit init # 0 hp
+fit init # 7 hp
+fit init # 1 hp
+fit init # 4 hp
+hp initial #1 loss=-0.9567006584552935
+hp initial #2
+hp initial #3
+hp initial #4
+hp initial #5
+hp initial #6
+hp initial #7
+hp initial #8 loss=-0.9567445808773194
+hp initial #9
+hp initial #10
+DONE WITH FIRST FIT hp
+MT fitting reopen hp
+fit reopen # 6 nl
+fit reopen # 4 nl
+fit reopen # 0 nl
+fit reopen # 8 nl
+fit reopen # 7 nl
+fit reopen # 9 nl
+fit reopen # 2 nl
+fit reopen # 3 nl
+fit reopen # 1 nl
+fit reopen # 5 nl
+fit reopen # 6 ka
+fit reopen # 0 ka
+fit reopen # 9 ka
+fit reopen # 4 ka
+fit reopen # 5 ka
+fit reopen # 3 ka
+fit reopen # 1 ka
+fit reopen # 8 ka
+fit reopen # 7 ka
+fit reopen # 2 ka
+fit init # 3 wb
+fit init # 8 wb
+fit init # 0 wb
+fit init # 9 wb
+fit init # 5 wb
+fit init # 4 wb
+fit init # 2 wb
+fit init # 7 wb
+fit init # 6 wb
+fit init # 1 wb
+wb initial #1 loss=-0.9889194474540142
+wb initial #2 loss=-0.9889415229490597
+wb initial #3 loss=-0.9895238272505629
+wb initial #4
+wb initial #5 loss=-0.9896329584966367
+wb initial #6
+wb initial #7 loss=-0.9903251595508505
+wb initial #8 loss=-0.9908432083938249
+wb initial #9
+wb initial #10
+DONE WITH FIRST FIT wb
+MT fitting reopen wb
+fit reopen # 1 hp
+fit reopen # 6 hp
+fit reopen # 2 hp
+fit reopen # 7 hp
+fit reopen # 9 hp
+fit reopen # 3 hp
+fit reopen # 5 hp
+fit reopen # 0 hp
+fit reopen # 4 hp
+fit reopen # 8 hp
+fit reopen # 2 jk
+fit reopen # 5 jk
+fit reopen # 3 jk
+fit reopen # 4 jk
+fit reopen # 1 jk
+fit reopen # 9 jk
+fit reopen # 8 jk
+fit reopen # 0 jk
+fit reopen # 7 jk
+fit reopen # 6 jk
+fit init # 5 tn
+fit init # 9 tn
+fit init # 3 tn
+fit init # 8 tn
+fit init # 2 tn
+fit init # 7 tn
+fit init # 6 tn
+fit init # 1 tn
+fit init # 4 tn
+fit init # 0 tn
+tn initial #1 loss=-0.9931774066000082
+tn initial #2 loss=-0.99483653163807
+tn initial #3
+tn initial #4
+tn initial #5 loss=-0.9951232650623782
+tn initial #6
+tn initial #7
+tn initial #8
+tn initial #9
+tn initial #10
+DONE WITH FIRST FIT tn
+MT fitting reopen tn
+fit reopen # 4 hr
+fit reopen # 9 hr
+fit reopen # 1 hr
+fit reopen # 5 hr
+fit reopen # 6 hr
+fit reopen # 0 hr
+fit reopen # 3 hr
+fit reopen # 8 hr
+fit reopen # 7 hr
+fit reopen # 2 hr
+fit init # 9 or
+fit init # 0 or
+fit init # 8 or
+fit init # 5 or
+fit init # 2 or
+fit init # 1 or
+fit init # 3 or
+fit init # 7 or
+fit init # 4 or
+fit init # 6 or
+or initial #1 loss=-0.9854298872170109
+or initial #2 loss=-0.9861247915503244
+or initial #3 loss=-0.9868269402518435
+or initial #4
+or initial #5
+or initial #6
+or initial #7
+or initial #8
+or initial #9
+or initial #10
+DONE WITH FIRST FIT or
+MT fitting reopen or
+fit reopen # 6 wb
+fit reopen # 8 wb
+fit reopen # 5 wb
+fit reopen # 0 wb
+fit reopen # 3 wb
+fit reopen # 7 wb
+fit reopen # 9 wb
+fit reopen # 4 wb
+fit reopen # 2 wb
+fit reopen # 1 wb
+fit reopen # 0 tn
+fit reopen # 9 tn
+fit reopen # 8 tn
+fit reopen # 1 tn
+fit reopen # 3 tn
+fit reopen # 2 tn
+fit reopen # 5 tn
+fit reopen # 4 tn
+fit reopen # 7 tn
+fit reopen # 6 tn
+fit init # 2 gj
+fit init # 0 gj
+fit init # 5 gj
+fit init # 1 gj
+fit init # 8 gj
+fit init # 3 gj
+fit init # 4 gj
+fit init # 7 gj
+fit init # 9 gj
+fit init # 6 gj
+gj initial #1 loss=-0.9854995155757331
+gj initial #2 loss=-0.9858660044680099
+gj initial #3
+gj initial #4
+gj initial #5
+gj initial #6
+gj initial #7
+gj initial #8 loss=-0.9859472750569155
+gj initial #9
+gj initial #10
+DONE WITH FIRST FIT gj
+MT fitting reopen gj
+fit init # 3 br
+fit init # 8 br
+fit init # 9 br
+fit init # 5 br
+fit init # 7 br
+fit init # 0 br
+fit init # 4 br
+fit init # 2 br
+fit init # 6 br
+fit init # 1 br
+br initial #1 loss=-0.9179434666894742
+br initial #2 loss=-0.9185157990425189
+br initial #3
+br initial #4
+br initial #5 loss=-0.9187265171629949
+br initial #6
+br initial #7
+br initial #8
+br initial #9
+br initial #10
+DONE WITH FIRST FIT br
+MT fitting reopen br
+fit reopen # 1 or
+fit reopen # 6 or
+fit reopen # 5 or
+fit reopen # 0 or
+fit reopen # 2 or
+fit reopen # 8 or
+fit reopen # 9 or
+fit reopen # 3 or
+fit reopen # 7 or
+fit reopen # 4 or
+fit reopen # 5 gj
+fit reopen # 2 gj
+fit reopen # 7 gj
+fit reopen # 3 gj
+fit reopen # 1 gj
+fit reopen # 9 gj
+fit reopen # 0 gj
+fit reopen # 4 gj
+fit reopen # 6 gj
+fit reopen # 8 gj
+fit init # 4 py
+fit init # 9 py
+fit init # 8 py
+fit init # 7 py
+fit init # 0 py
+fit init # 5 py
+fit init # 1 py
+fit init # 3 py
+fit init # 6 py
+fit init # 2 py
+py initial #1 loss=-0.9732742641487973
+py initial #2 loss=-0.9746110924218259
+py initial #3
+py initial #4
+py initial #5 loss=-0.9746527673247238
+py initial #6
+py initial #7
+py initial #8
+py initial #9 loss=-0.9747046634041631
+py initial #10
+DONE WITH FIRST FIT py
+MT fitting reopen py
+fit reopen # 7 br
+fit reopen # 5 br
+fit reopen # 4 br
+fit reopen # 3 br
+fit reopen # 2 br
+fit reopen # 0 br
+fit reopen # 9 br
+fit reopen # 8 br
+fit reopen # 1 br
+fit reopen # 6 br
+fit init # 7 jh
+fit init # 8 jh
+fit init # 3 jh
+fit init # 1 jh
+fit init # 5 jh
+fit init # 9 jh
+fit init # 6 jh
+fit init # 4 jh
+fit init # 0 jh
+fit init # 2 jh
+jh initial #1 loss=-0.96763970270845
+jh initial #2 loss=-0.9692771348440868
+jh initial #3
+jh initial #4
+jh initial #5
+jh initial #6
+jh initial #7
+jh initial #8
+jh initial #9
+jh initial #10
+DONE WITH FIRST FIT jh
+MT fitting reopen jh
+fit init # 0 ut
+fit init # 6 ut
+fit init # 8 ut
+fit init # 1 ut
+fit init # 3 ut
+fit init # 5 ut
+fit init # 7 ut
+fit init # 4 ut
+fit init # 2 ut
+fit init # 9 ut
+ut initial #1 loss=-0.9650231045495481
+ut initial #2
+ut initial #3
+ut initial #4
+ut initial #5
+ut initial #6
+ut initial #7
+ut initial #8
+ut initial #9
+ut initial #10
+DONE WITH FIRST FIT ut
+MT fitting reopen ut
+fit reopen # 9 py
+fit reopen # 7 py
+fit reopen # 6 py
+fit reopen # 3 py
+fit reopen # 2 py
+fit reopen # 0 py
+fit reopen # 8 py
+fit reopen # 4 py
+fit reopen # 5 py
+fit reopen # 1 py
+fit reopen # 8 jh
+fit reopen # 1 jh
+fit reopen # 9 jh
+fit reopen # 3 jh
+fit reopen # 0 jh
+fit reopen # 7 jh
+fit reopen # 4 jh
+fit reopen # 2 jh
+fit reopen # 5 jh
+fit reopen # 6 jh
+fit reopen # 2 ut
+fit reopen # 8 ut
+fit reopen # 4 ut
+fit reopen # 9 ut
+fit reopen # 5 ut
+fit reopen # 7 ut
+fit reopen # 6 ut
+fit reopen # 1 ut
+fit reopen # 3 ut
+fit reopen # 0 ut
+fit init # 5 la
+fit init # 4 la
+fit init # 7 la
+fit init # 3 la
+fit init # 2 la
+fit init # 8 la
+fit init # 9 la
+fit init # 6 la
+fit init # 1 la
+fit init # 0 la
+la initial #1 loss=-0.8215354579964668
+la initial #2
+la initial #3
+la initial #4
+la initial #5 loss=-0.8215953476341222
+la initial #6 loss=-0.8216073533877376
+la initial #7
+la initial #8
+la initial #9 loss=-0.8216288898462767
+la initial #10
+DONE WITH FIRST FIT la
+MT fitting reopen la
+fit init # 2 rj
+fit init # 5 rj
+fit init # 3 rj
+fit init # 1 rj
+fit init # 0 rj
+fit init # 9 rj
+fit init # 8 rj
+fit init # 6 rj
+fit init # 4 rj
+fit init # 7 rj
+rj initial #1 loss=-0.9781771386865036
+rj initial #2 loss=-0.978574827021314
+rj initial #3 loss=-0.9792587980184546
+rj initial #4
+rj initial #5
+rj initial #6 loss=-0.9792842234449319
+rj initial #7 loss=-0.9793362145726405
+rj initial #8
+rj initial #9 loss=-0.9796392443626066
+rj initial #10 loss=-0.9798675542836397
+DONE WITH FIRST FIT rj
+MT fitting reopen rj
+fit init # 4 ga
+fit init # 8 ga
+fit init # 9 ga
+fit init # 6 ga
+fit init # 1 ga
+fit init # 7 ga
+fit init # 3 ga
+fit init # 2 ga
+fit init # 5 ga
+fit init # 0 ga
+ga initial #1 loss=-0.949920989924685
+ga initial #2 loss=-0.9505817724045151
+ga initial #3
+ga initial #4
+ga initial #5 loss=-0.9506724431299205
+ga initial #6
+ga initial #7
+ga initial #8
+ga initial #9
+ga initial #10
+DONE WITH FIRST FIT ga
+MT fitting reopen ga
+fit init # 1 ch
+fit init # 7 ch
+fit init # 3 ch
+fit init # 4 ch
+fit init # 6 ch
+fit init # 8 ch
+fit init # 2 ch
+fit init # 9 ch
+fit init # 5 ch
+fit init # 0 ch
+ch initial #1 loss=-0.9524532863014796
+ch initial #2 loss=-0.9536688692220019
+ch initial #3 loss=-0.955574216535015
+ch initial #4
+ch initial #5
+ch initial #6
+ch initial #7
+ch initial #8
+ch initial #9 loss=-0.9559075356056921
+ch initial #10
+DONE WITH FIRST FIT ch
+MT fitting reopen ch
+fit init # 0 an
+fit init # 3 an
+fit init # 9 an
+fit init # 5 an
+fit init # 2 an
+fit init # 8 an
+fit init # 6 an
+fit init # 7 an
+fit init # 4 an
+fit init # 1 an
+an initial #1 loss=-0.8826120847012346
+an initial #2 loss=-0.882761609914673
+an initial #3
+an initial #4 loss=-0.8827684189942326
+an initial #5
+an initial #6
+an initial #7
+an initial #8
+an initial #9
+an initial #10
+DONE WITH FIRST FIT an
+MT fitting reopen an
+fit init # 6 mh
+fit init # 5 mh
+fit init # 0 mh
+fit init # 9 mh
+fit init # 1 mh
+fit init # 2 mh
+fit init # 3 mh
+fit init # 7 mh
+fit init # 8 mh
+fit init # 4 mh
+mh initial #1 loss=-0.9707802370620158
+mh initial #2
+mh initial #3 loss=-0.9713712362214008
+mh initial #4 loss=-0.9718247240295499
+mh initial #5 loss=-0.9720129141727256
+mh initial #6 loss=-0.9726593567474607
+mh initial #7
+mh initial #8
+mh initial #9
+mh initial #10
+DONE WITH FIRST FIT mh
+MT fitting reopen mh
+fit reopen # 9 la
+fit reopen # 0 la
+fit reopen # 7 la
+fit reopen # 8 la
+fit reopen # 6 la
+fit reopen # 3 la
+fit reopen # 1 la
+fit reopen # 4 la
+fit reopen # 5 la
+fit reopen # 2 la
+fit reopen # 2 ch
+fit reopen # 3 ch
+fit reopen # 6 ch
+fit reopen # 8 ch
+fit reopen # 5 ch
+fit reopen # 7 ch
+fit reopen # 4 ch
+fit reopen # 1 ch
+fit reopen # 0 ch
+fit reopen # 9 ch
+fit reopen # 0 rj
+fit reopen # 5 rj
+fit reopen # 4 rj
+fit reopen # 3 rj
+fit reopen # 8 rj
+fit reopen # 9 rj
+fit reopen # 6 rj
+fit reopen # 7 rj
+fit reopen # 1 rj
+fit reopen # 2 rj
+fit reopen # 8 ga
+fit reopen # 6 ga
+fit reopen # 4 ga
+fit reopen # 0 ga
+fit reopen # 2 ga
+fit reopen # 9 ga
+fit reopen # 5 ga
+fit reopen # 7 ga
+fit reopen # 1 ga
+fit reopen # 3 ga
+fit reopen # 1 an
+fit reopen # 2 an
+fit reopen # 5 an
+fit reopen # 7 an
+fit reopen # 0 an
+fit reopen # 3 an
+fit reopen # 8 an
+fit reopen # 9 an
+fit reopen # 4 an
+fit reopen # 6 an
+fit init # 5 tg
+fit init # 7 tg
+fit init # 6 tg
+fit init # 9 tg
+fit init # 2 tg
+fit init # 1 tg
+fit init # 3 tg
+fit init # 4 tg
+fit init # 8 tg
+fit init # 0 tg
+tg initial #1 loss=-0.9773631622465546
+tg initial #2 loss=-0.9779577320221429
+tg initial #3
+tg initial #4
+tg initial #5
+tg initial #6
+tg initial #7 loss=-0.9781040793309528
+tg initial #8
+tg initial #9 loss=-0.978104365661061
+tg initial #10
+DONE WITH FIRST FIT tg
+MT fitting reopen tg
+fit reopen # 8 mh
+fit reopen # 9 mh
+fit reopen # 1 mh
+fit reopen # 3 mh
+fit reopen # 7 mh
+fit reopen # 4 mh
+fit reopen # 0 mh
+fit reopen # 6 mh
+fit reopen # 2 mh
+fit reopen # 5 mh
+fit init # 6 up
+fit init # 7 up
+fit init # 5 up
+fit init # 9 up
+fit init # 3 up
+fit init # 8 up
+fit init # 2 up
+fit init # 1 up
+fit init # 4 up
+fit init # 0 up
+up initial #1 loss=-0.9841766519264015
+up initial #2
+up initial #3
+up initial #4
+up initial #5
+up initial #6
+up initial #7
+up initial #8
+up initial #9
+up initial #10 loss=-0.9841787304054094
+DONE WITH FIRST FIT up
+MT fitting reopen up
+fit init # 9 pb
+fit init # 8 pb
+fit init # 3 pb
+fit init # 7 pb
+fit init # 1 pb
+fit init # 0 pb
+fit init # 6 pb
+fit init # 2 pb
+fit init # 5 pb
+fit init # 4 pb
+pb initial #1 loss=-0.9637708845224662
+pb initial #2 loss=-0.9659086600941333
+pb initial #3
+pb initial #4 loss=-0.9663134284019015
+pb initial #5 loss=-0.9663134305500461
+pb initial #6
+pb initial #7
+pb initial #8
+pb initial #9
+pb initial #10
+DONE WITH FIRST FIT pb
+MT fitting reopen pb
+fit init # 7 mp
+fit init # 5 mp
+fit init # 0 mp
+fit init # 6 mp
+fit init # 9 mp
+fit init # 3 mp
+fit init # 8 mp
+fit init # 4 mp
+fit init # 1 mp
+fit init # 2 mp
+mp initial #1 loss=-0.9831746324696192
+mp initial #2 loss=-0.9835881759897149
+mp initial #3
+mp initial #4
+mp initial #5
+mp initial #6
+mp initial #7
+mp initial #8
+mp initial #9
+mp initial #10
+DONE WITH FIRST FIT mp
+MT fitting reopen mp
+fit reopen # 8 tg
+fit reopen # 3 tg
+fit reopen # 9 tg
+fit reopen # 5 tg
+fit reopen # 2 tg
+fit reopen # 1 tg
+fit reopen # 4 tg
+fit reopen # 6 tg
+fit reopen # 7 tg
+fit reopen # 0 tg
+fit reopen # 2 up
+fit reopen # 5 up
+fit reopen # 3 up
+fit reopen # 6 up
+fit reopen # 7 up
+fit reopen # 9 up
+fit reopen # 1 up
+fit reopen # 8 up
+fit reopen # 0 up
+fit reopen # 4 up
+fit init # 4 ld
+fit init # 8 ld
+fit init # 9 ld
+fit init # 2 ld
+fit init # 0 ld
+fit init # 6 ld
+fit init # 3 ld
+fit init # 7 ld
+fit init # 1 ld
+fit init # 5 ld
+ld initial #1 loss=-0.8223218124292384
+ld initial #2
+ld initial #3 loss=-0.8223973974750737
+ld initial #4 loss=-0.8228129645474729
+ld initial #5
+ld initial #6 loss=-0.8231561641304184
+ld initial #7
+ld initial #8
+ld initial #9 loss=-0.8235150304530999
+ld initial #10
+DONE WITH FIRST FIT ld
+MT fitting reopen ld
+fit reopen # 0 pb
+fit reopen # 6 pb
+fit reopen # 8 pb
+fit reopen # 2 pb
+fit reopen # 9 pb
+fit reopen # 1 pb
+fit reopen # 7 pb
+fit reopen # 5 pb
+fit reopen # 4 pb
+fit reopen # 3 pb
+fit reopen # 2 mp
+fit reopen # 5 mp
+fit reopen # 6 mp
+fit reopen # 0 mp
+fit reopen # 1 mp
+fit reopen # 3 mp
+fit reopen # 9 mp
+fit reopen # 8 mp
+fit reopen # 7 mp
+fit reopen # 4 mp
+fit reopen # 9 ld
+fit reopen # 2 ld
+fit reopen # 3 ld
+fit reopen # 1 ld
+fit reopen # 7 ld
+fit reopen # 4 ld
+fit reopen # 5 ld
+fit reopen # 6 ld
+fit reopen # 8 ld
+fit reopen # 0 ld
+fit init # 0 kl
+fit init # 4 kl
+fit init # 8 kl
+fit init # 2 kl
+fit init # 5 kl
+fit init # 7 kl
+fit init # 6 kl
+fit init # 9 kl
+fit init # 3 kl
+fit init # 1 kl
+kl initial #1 loss=-0.9711315443575923
+kl initial #2 loss=-0.9713139878158108
+kl initial #3
+kl initial #4
+kl initial #5 loss=-0.9713216042051566
+kl initial #6 loss=-0.9713784416457483
+kl initial #7
+kl initial #8 loss=-0.9713838773584087
+kl initial #9
+kl initial #10
+DONE WITH FIRST FIT kl
+MT fitting reopen kl
+fit reopen # 7 kl
+fit reopen # 3 kl
+fit reopen # 8 kl
+fit reopen # 0 kl
+fit reopen # 9 kl
+fit reopen # 4 kl
+fit reopen # 6 kl
+fit reopen # 5 kl
+fit reopen # 1 kl
+fit reopen # 2 kl
+dn_dd reopen #1 loss=-0.2914726531747913
+dn_dd reopen #2
+dn_dd reopen #3
+dn_dd reopen #4
+dn_dd reopen #5
+dn_dd reopen #6 loss=-0.291472653177634
+dn_dd reopen #7
+dn_dd reopen #8
+dn_dd reopen #9 loss=-0.291472653178047
+dn_dd reopen #10
+DONE WITH REOPEN FIT dn_dd
+inside plot state = dn_dd
+
+628.2 minutes in total for dn_dd
+
+ar reopen #1 loss=-0.5152825319518035
+ar reopen #2
+ar reopen #3
+ar reopen #4
+ar reopen #5 loss=-0.5152825319546884
+ar reopen #6 loss=-0.5152825319622677
+ar reopen #7 loss=-0.5152825319698815
+ar reopen #8
+ar reopen #9
+ar reopen #10
+DONE WITH REOPEN FIT ar
+inside plot state = ar
+
+647.5 minutes in total for ar
+
+as reopen #1 loss=-0.19998697468243304
+as reopen #2 loss=-0.19998697468250792
+as reopen #3
+as reopen #4 loss=-0.19998697468266943
+as reopen #5
+as reopen #6
+as reopen #7
+as reopen #8
+as reopen #9
+as reopen #10
+DONE WITH REOPEN FIT as
+inside plot state = as
+
+653.5 minutes in total for as
+
+ml reopen #1 loss=-0.16390624771558096
+ml reopen #2
+ml reopen #3
+ml reopen #4 loss=-0.1639062477157383
+ml reopen #5
+ml reopen #6
+ml reopen #7 loss=-0.1639062477157954
+ml reopen #8
+ml reopen #9
+ml reopen #10
+DONE WITH REOPEN FIT ml
+inside plot state = ml
+
+654.4 minutes in total for ml
+
+tr reopen #1 loss=-0.4883965351582148
+tr reopen #2
+tr reopen #3
+tr reopen #4 loss=-0.4883965351601794
+tr reopen #5
+tr reopen #6
+tr reopen #7
+tr reopen #8
+tr reopen #9
+tr reopen #10 loss=-0.4883965351608732
+DONE WITH REOPEN FIT tr
+inside plot state = tr
+
+658.9 minutes in total for tr
+
+dl reopen #1 loss=-0.648183156589393
+dl reopen #2
+dl reopen #3
+dl reopen #4
+dl reopen #5
+dl reopen #6
+dl reopen #7
+dl reopen #8
+dl reopen #9
+dl reopen #10
+DONE WITH REOPEN FIT dl
+inside plot state = dl
+
+664.4 minutes in total for dl
+
+ap reopen #1 loss=-0.3068779893656543
+ap reopen #2 loss=-0.3068779893663751
+ap reopen #3 loss=-0.3068779893664714
+ap reopen #4 loss=-0.30687798936667127
+ap reopen #5
+ap reopen #6
+ap reopen #7
+ap reopen #8
+ap reopen #9
+ap reopen #10
+DONE WITH REOPEN FIT ap
+inside plot state = ap
+
+665.9 minutes in total for ap
+
+mn reopen #1 loss=-0.3890152402027617
+mn reopen #2
+mn reopen #3
+mn reopen #4 loss=-0.38901524020550854
+mn reopen #5
+mn reopen #6 loss=-0.38901524020590544
+mn reopen #7 loss=-0.3890152402073658
+mn reopen #8
+mn reopen #9
+mn reopen #10
+DONE WITH REOPEN FIT mn
+inside plot state = mn
+
+670.2 minutes in total for mn
+
+mz reopen #1 loss=0.20430523807469278
+mz reopen #2
+mz reopen #3
+mz reopen #4
+mz reopen #5
+mz reopen #6
+mz reopen #7
+mz reopen #8
+mz reopen #9
+mz reopen #10
+DONE WITH REOPEN FIT mz
+inside plot state = mz
+
+676.2 minutes in total for mz
+
+sk reopen #1 loss=-0.3284492633534272
+sk reopen #2
+sk reopen #3
+sk reopen #4 loss=-0.3284492633540748
+sk reopen #5
+sk reopen #6
+sk reopen #7
+sk reopen #8
+sk reopen #9
+sk reopen #10
+DONE WITH REOPEN FIT sk
+inside plot state = sk
+
+678.4 minutes in total for sk
+
+nl reopen #1 loss=-0.35893682509813035
+nl reopen #2
+nl reopen #3
+nl reopen #4
+nl reopen #5
+nl reopen #6
+nl reopen #7
+nl reopen #8
+nl reopen #9
+nl reopen #10
+DONE WITH REOPEN FIT nl
+inside plot state = nl
+
+691.9 minutes in total for nl
+
+ct reopen #1 loss=-0.527914234779747
+ct reopen #2
+ct reopen #3 loss=-0.5279142347815488
+ct reopen #4
+ct reopen #5
+ct reopen #6
+ct reopen #7
+ct reopen #8 loss=-0.5279142347830935
+ct reopen #9
+ct reopen #10
+DONE WITH REOPEN FIT ct
+inside plot state = ct
+
+686.1 minutes in total for ct
+
+ka reopen #1 loss=-0.27147602658624725
+ka reopen #2 loss=-0.27147602658726633
+ka reopen #3
+ka reopen #4
+ka reopen #5
+ka reopen #6
+ka reopen #7 loss=-0.2714760265873137
+ka reopen #8
+ka reopen #9 loss=-0.2714760265873421
+ka reopen #10
+DONE WITH REOPEN FIT ka
+inside plot state = ka
+
+692.1 minutes in total for ka
+
+hp reopen #1 loss=-0.6050383540959663
+hp reopen #2
+hp reopen #3
+hp reopen #4
+hp reopen #5
+hp reopen #6
+hp reopen #7
+hp reopen #8
+hp reopen #9 loss=-0.6050383540959707
+hp reopen #10
+DONE WITH REOPEN FIT hp
+inside plot state = hp
+
+694.7 minutes in total for hp
+
+jk reopen #1 loss=-0.8575476981069353
+jk reopen #2 loss=-0.8575476981324202
+jk reopen #3
+jk reopen #4
+jk reopen #5
+jk reopen #6 loss=-0.8575476981324417
+jk reopen #7 loss=-0.8575476981326505
+jk reopen #8
+jk reopen #9
+jk reopen #10 loss=-0.8575476981326555
+DONE WITH REOPEN FIT jk
+inside plot state = jk
+
+694.7 minutes in total for jk
+
+hr reopen #1 loss=-0.7939684799893532
+hr reopen #2 loss=-0.7939684800773237
+hr reopen #3
+hr reopen #4
+hr reopen #5
+hr reopen #6
+hr reopen #7
+hr reopen #8 loss=-0.7939684800928364
+hr reopen #9
+hr reopen #10
+DONE WITH REOPEN FIT hr
+inside plot state = hr
+
+697.1 minutes in total for hr
+
+wb reopen #1 loss=-0.858986661923931
+wb reopen #2 loss=-0.8589866619239356
+wb reopen #3
+wb reopen #4 loss=-0.858986661923937
+wb reopen #5
+wb reopen #6 loss=-0.8589866619239426
+wb reopen #7
+wb reopen #8
+wb reopen #9 loss=-0.8589866619239569
+wb reopen #10
+DONE WITH REOPEN FIT wb
+inside plot state = wb
+
+701.5 minutes in total for wb
+
+or reopen #1 loss=-0.3147729403874458
+or reopen #2 loss=-0.31477294038764164
+or reopen #3
+or reopen #4
+or reopen #5
+or reopen #6
+or reopen #7
+or reopen #8
+or reopen #9 loss=-0.31477294038768816
+or reopen #10 loss=-0.3147729403877045
+DONE WITH REOPEN FIT or
+inside plot state = or
+
+706.5 minutes in total for or
+
+tn reopen #1 loss=-0.5610313825989969
+tn reopen #2
+tn reopen #3
+tn reopen #4
+tn reopen #5 loss=-0.561031382599
+tn reopen #6
+tn reopen #7
+tn reopen #8
+tn reopen #9 loss=-0.5610313825990118
+tn reopen #10
+DONE WITH REOPEN FIT tn
+inside plot state = tn
+
+703.0 minutes in total for tn
+
+gj reopen #1 loss=-0.9165756959149826
+gj reopen #2
+gj reopen #3 loss=-0.9165756959150427
+gj reopen #4
+gj reopen #5
+gj reopen #6
+gj reopen #7
+gj reopen #8
+gj reopen #9
+gj reopen #10
+DONE WITH REOPEN FIT gj
+inside plot state = gj
+
+709.2 minutes in total for gj
+
+br reopen #1 loss=-0.5353823159313373
+br reopen #2 loss=-0.5356536227762406
+br reopen #3 loss=-0.5356685451585341
+br reopen #4
+br reopen #5
+br reopen #6
+br reopen #7
+br reopen #8 loss=-0.5356829561335447
+br reopen #9
+br reopen #10
+DONE WITH REOPEN FIT br
+inside plot state = br
+
+710.9 minutes in total for br
+
+py reopen #1 loss=-0.3890212128915935
+py reopen #2 loss=-0.38902121289168706
+py reopen #3
+py reopen #4
+py reopen #5
+py reopen #6
+py reopen #7
+py reopen #8
+py reopen #9
+py reopen #10 loss=-0.38902121289170466
+DONE WITH REOPEN FIT py
+inside plot state = py
+
+713.8 minutes in total for py
+
+jh reopen #1 loss=-0.6878224405228175
+jh reopen #2
+jh reopen #3
+jh reopen #4 loss=-0.6878224405237341
+jh reopen #5
+jh reopen #6
+jh reopen #7
+jh reopen #8
+jh reopen #9
+jh reopen #10
+DONE WITH REOPEN FIT jh
+inside plot state = jh
+
+716.3 minutes in total for jh
+
+ut reopen #1 loss=-0.5200200427337409
+ut reopen #2
+ut reopen #3 loss=-0.5200200435236355
+ut reopen #4 loss=-0.5200200435777419
+ut reopen #5 loss=-0.5200200437889868
+ut reopen #6
+ut reopen #7
+ut reopen #8
+ut reopen #9
+ut reopen #10
+DONE WITH REOPEN FIT ut
+inside plot state = ut
+
+716.7 minutes in total for ut
+
+la reopen #1 loss=-0.7946480882166885
+la reopen #2 loss=-0.7948478994935483
+la reopen #3
+la reopen #4
+la reopen #5
+la reopen #6
+la reopen #7
+la reopen #8
+la reopen #9
+la reopen #10
+DONE WITH REOPEN FIT la
+inside plot state = la
+
+722.7 minutes in total for la
+
+ch reopen #1 loss=-0.2985012450334116
+ch reopen #2 loss=-0.2985012450339162
+ch reopen #3
+ch reopen #4
+ch reopen #5
+ch reopen #6
+ch reopen #7
+ch reopen #8
+ch reopen #9
+ch reopen #10 loss=-0.298581259501758
+DONE WITH REOPEN FIT ch
+inside plot state = ch
+
+723.3 minutes in total for ch
+
+rj reopen #1 loss=-0.672114913024257
+rj reopen #2 loss=-0.6721241341258067
+rj reopen #3
+rj reopen #4 loss=-0.6721241341866503
+rj reopen #5
+rj reopen #6
+rj reopen #7 loss=-0.6721241341883999
+rj reopen #8 loss=-0.6721241341893498
+rj reopen #9
+rj reopen #10
+DONE WITH REOPEN FIT rj
+inside plot state = rj
+
+723.8 minutes in total for rj
+
+ga reopen #1 loss=-0.4568051100173796
+ga reopen #2
+ga reopen #3
+ga reopen #4 loss=-0.45680511001739
+ga reopen #5
+ga reopen #6
+ga reopen #7
+ga reopen #8
+ga reopen #9
+ga reopen #10
+DONE WITH REOPEN FIT ga
+inside plot state = ga
+
+725.3 minutes in total for ga
+
+an reopen #1 loss=-0.27065030028730336
+an reopen #2 loss=-0.2706503003114975
+an reopen #3
+an reopen #4 loss=-0.2706503003119057
+an reopen #5
+an reopen #6
+an reopen #7
+an reopen #8
+an reopen #9
+an reopen #10
+DONE WITH REOPEN FIT an
+inside plot state = an
+
+725.6 minutes in total for an
+
+mh reopen #1 loss=-0.2664718566094745
+mh reopen #2
+mh reopen #3
+mh reopen #4
+mh reopen #5
+mh reopen #6
+mh reopen #7 loss=-0.26647185660959394
+mh reopen #8 loss=-0.2664718566096457
+mh reopen #9 loss=-0.2664718566097208
+mh reopen #10
+DONE WITH REOPEN FIT mh
+inside plot state = mh
+
+726.3 minutes in total for mh
+
+tg reopen #1 loss=-0.6224367611928527
+tg reopen #2 loss=-0.6224999369131072
+tg reopen #3
+tg reopen #4
+tg reopen #5
+tg reopen #6
+tg reopen #7
+tg reopen #8 loss=-0.622499936914328
+tg reopen #9
+tg reopen #10
+DONE WITH REOPEN FIT tg
+inside plot state = tg
+
+728.8 minutes in total for tg
+
+pb reopen #1 loss=-0.6781851674796663
+pb reopen #2
+pb reopen #3
+pb reopen #4
+pb reopen #5
+pb reopen #6
+pb reopen #7
+pb reopen #8
+pb reopen #9
+pb reopen #10
+DONE WITH REOPEN FIT pb
+inside plot state = pb
+
+731.2 minutes in total for pb
+
+up reopen #1 loss=0.007100908561657078
+up reopen #2
+up reopen #3
+up reopen #4
+up reopen #5 loss=0.007100908558557326
+up reopen #6
+up reopen #7
+up reopen #8
+up reopen #9
+up reopen #10
+DONE WITH REOPEN FIT up
+inside plot state = up
+
+730.9 minutes in total for up
+
+mp reopen #1 loss=-0.43646322230734025
+mp reopen #2 loss=-0.43648332926251066
+mp reopen #3 loss=-0.43648332947843754
+mp reopen #4
+mp reopen #5 loss=-0.43648332959069236
+mp reopen #6
+mp reopen #7 loss=-0.43648332965541303
+mp reopen #8
+mp reopen #9
+mp reopen #10
+DONE WITH REOPEN FIT mp
+inside plot state = mp
+
+731.2 minutes in total for mp
+
+ld reopen #1 loss=-0.3631925492246236
+ld reopen #2 loss=-0.36319330904883196
+ld reopen #3 loss=-0.3631933090536985
+ld reopen #4
+ld reopen #5
+ld reopen #6
+ld reopen #7
+ld reopen #8
+ld reopen #9
+ld reopen #10
+DONE WITH REOPEN FIT ld
+inside plot state = ld
+
+734.3 minutes in total for ld
+
+kl reopen #1 loss=-0.39792276057047277
+kl reopen #2
+kl reopen #3
+kl reopen #4
+kl reopen #5 loss=-0.397922760570493
+kl reopen #6
+kl reopen #7
+kl reopen #8
+kl reopen #9
+kl reopen #10
+DONE WITH REOPEN FIT kl
+inside plot state = kl
+
+746.4 minutes in total for kl
+
+746.399 minutes for all states ending on 2021-12-15

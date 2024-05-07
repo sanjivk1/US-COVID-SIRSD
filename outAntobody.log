@@ -1,0 +1,650 @@
+tn
+
+ch
+
+tg
+
+ut
+
+la
+
+jk
+
+mp
+
+gj
+
+br
+
+ga
+
+as
+
+ar
+
+sk
+
+nl
+
+ld
+
+pb
+
+rj
+
+up
+
+or
+
+hr
+
+ka
+
+ap
+
+mh
+
+dl
+
+py
+
+ct
+
+jh
+
+ml
+
+tr
+
+dn_dd
+
+kl
+
+mn
+
+wb
+
+mz
+
+hp
+
+an
+
+ml initial #1 loss=-0.9227019837745146
+ml initial #2
+ml initial #3
+ml initial #4 loss=-0.9227033687646742
+ml initial #5
+ml initial #6
+ml initial #7 loss=-0.9232500264365621
+ml initial #8
+ml initial #9
+ml initial #10
+ml initial #11
+ml initial #12
+ml initial #13
+ml initial #14
+ml initial #15
+ml initial #16
+ml initial #17
+ml initial #18
+ml initial #19
+ml initial #20
+DONE WITH FIRST FIT
+as initial #1 loss=-0.9255652796695198
+as initial #2 loss=-0.9325850925941201
+as initial #3 loss=-0.9327229621282207
+as initial #4 loss=-0.9333055260702326
+as initial #5
+as initial #6
+as initial #7
+as initial #8
+as initial #9
+as initial #10
+as initial #11
+as initial #12
+as initial #13
+as initial #14
+as initial #15
+as initial #16
+as initial #17
+as initial #18
+as initial #19
+as initial #20
+DONE WITH FIRST FIT
+an initial #1 loss=-0.8170139499240618
+an initial #2 loss=-0.8277358380595016
+an initial #3
+an initial #4
+an initial #5
+an initial #6 loss=-0.8282935886215491
+an initial #7
+an initial #8
+an initial #9
+an initial #10
+an initial #11
+an initial #12
+an initial #13 loss=-0.8284157823299177
+an initial #14
+an initial #15
+an initial #16
+an initial #17
+an initial #18
+an initial #19
+an initial #20
+DONE WITH FIRST FIT
+ap initial #1 loss=-0.9638826390640729
+ap initial #2 loss=-0.9758150873518358
+ap initial #3
+ap initial #4
+ap initial #5
+ap initial #6
+ap initial #7
+ap initial #8
+ap initial #9
+ap initial #10
+ap initial #11
+ap initial #12
+ap initial #13
+ap initial #14
+ap initial #15
+ap initial #16
+ap initial #17
+ap initial #18
+ap initial #19
+ap initial #20
+DONE WITH FIRST FIT
+tn initial #1 loss=-0.9805044362395311
+tn initial #2
+tn initial #3 loss=-0.9821997653474234
+tn initial #4
+tn initial #5
+tn initial #6
+tn initial #7
+tn initial #8
+tn initial #9
+tn initial #10
+tn initial #11
+tn initial #12
+tn initial #13
+tn initial #14 loss=-0.9822082701105738
+tn initial #15
+tn initial #16
+tn initial #17
+tn initial #18
+tn initial #19
+tn initial #20
+DONE WITH FIRST FIT
+dl initial #1 loss=-0.9738858456394635
+dl initial #2 loss=-0.9762133625333108
+dl initial #3
+dl initial #4
+dl initial #5
+dl initial #6
+dl initial #7
+dl initial #8
+dl initial #9
+dl initial #10
+dl initial #11
+dl initial #12
+dl initial #13
+dl initial #14
+dl initial #15
+dl initial #16
+dl initial #17
+dl initial #18
+dl initial #19
+dl initial #20
+DONE WITH FIRST FIT
+nl initial #1 loss=-0.877524019602548
+nl initial #2 loss=-0.888171164717138
+nl initial #3 loss=-0.8884046825904677
+nl initial #4 loss=-0.8884225472170054
+nl initial #5
+nl initial #6
+nl initial #7
+nl initial #8
+nl initial #9 loss=-0.8884225477719117
+nl initial #10
+nl initial #11 loss=-0.8884281328378919
+nl initial #12
+nl initial #13
+nl initial #14 loss=-0.8884281519138086
+nl initial #15
+nl initial #16 loss=-0.8884281856743531
+nl initial #17
+nl initial #18
+nl initial #19
+nl initial #20
+DONE WITH FIRST FIT
+or initial #1 loss=-0.9605953150771355
+or initial #2
+or initial #3
+or initial #4
+or initial #5
+or initial #6
+or initial #7
+or initial #8
+or initial #9
+or initial #10
+or initial #11
+or initial #12
+or initial #13
+or initial #14
+or initial #15
+or initial #16
+or initial #17
+or initial #18
+or initial #19
+or initial #20
+DONE WITH FIRST FIT
+hr initial #1 loss=-0.9498149777996149
+hr initial #2 loss=-0.951890740718382
+hr initial #3
+hr initial #4
+hr initial #5 loss=-0.9545054639706245
+hr initial #6
+hr initial #7
+hr initial #8 loss=-0.9549432080637518
+hr initial #9
+hr initial #10
+hr initial #11
+hr initial #12
+hr initial #13
+hr initial #14
+hr initial #15
+hr initial #16
+hr initial #17
+hr initial #18
+hr initial #19
+hr initial #20 loss=-0.9551012894008318
+DONE WITH FIRST FIT
+ld initial #1 loss=-0.8069549188047968
+ld initial #2 loss=-0.8096908008824263
+ld initial #3
+ld initial #4 loss=-0.8152205231370702
+ld initial #5
+ld initial #6
+ld initial #7
+ld initial #8
+ld initial #9 loss=-0.8168061247621603
+ld initial #10
+ld initial #11
+ld initial #12
+ld initial #13
+ld initial #14
+ld initial #15
+ld initial #16
+ld initial #17
+ld initial #18
+ld initial #19 loss=-0.8173786535478003
+ld initial #20
+DONE WITH FIRST FIT
+dn_dd initial #1 loss=-0.8304263577831579
+dn_dd initial #2
+dn_dd initial #3
+dn_dd initial #4 loss=-0.8304543552227912
+dn_dd initial #5
+dn_dd initial #6 loss=-0.8305226577065055
+dn_dd initial #7
+dn_dd initial #8
+dn_dd initial #9
+dn_dd initial #10
+dn_dd initial #11
+dn_dd initial #12 loss=-0.8305297185850268
+dn_dd initial #13
+dn_dd initial #14
+dn_dd initial #15
+dn_dd initial #16
+dn_dd initial #17
+dn_dd initial #18
+dn_dd initial #19
+dn_dd initial #20
+DONE WITH FIRST FIT
+hp initial #1 loss=-0.930683585430959
+hp initial #2 loss=-0.9330045669100843
+hp initial #3 loss=-0.9331592348176868
+hp initial #4
+hp initial #5
+hp initial #6 loss=-0.933549737226982
+hp initial #7 loss=-0.9340433329043889
+hp initial #8
+hp initial #9
+hp initial #10
+hp initial #11
+hp initial #12
+hp initial #13
+hp initial #14
+hp initial #15
+hp initial #16
+hp initial #17
+hp initial #18
+hp initial #19
+hp initial #20
+DONE WITH FIRST FIT
+wb initial #1 loss=-0.9394537503731094
+wb initial #2 loss=-0.9565228670762392
+wb initial #3
+wb initial #4 loss=-0.9565228675562631
+wb initial #5
+wb initial #6
+wb initial #7
+wb initial #8
+wb initial #9
+wb initial #10
+wb initial #11 loss=-0.9568293581158549
+wb initial #12
+wb initial #13
+wb initial #14
+wb initial #15
+wb initial #16
+wb initial #17
+wb initial #18
+wb initial #19
+wb initial #20
+DONE WITH FIRST FIT
+ct initial #1 loss=-0.9700566757576781
+ct initial #2 loss=-0.9709753861628444
+ct initial #3
+ct initial #4 loss=-0.9745651998070599
+ct initial #5
+ct initial #6
+ct initial #7
+ct initial #8
+ct initial #9
+ct initial #10
+ct initial #11
+ct initial #12
+ct initial #13
+ct initial #14
+ct initial #15
+ct initial #16
+ct initial #17
+ct initial #18
+ct initial #19
+ct initial #20
+DONE WITH FIRST FIT
+br initial #1 loss=-0.8325222393541932
+br initial #2
+br initial #3
+br initial #4
+br initial #5
+br initial #6
+br initial #7
+br initial #8
+br initial #9
+br initial #10
+br initial #11
+br initial #12
+br initial #13
+br initial #14
+br initial #15 loss=-0.8325713511556805
+br initial #16
+br initial #17
+br initial #18
+br initial #19
+br initial #20
+DONE WITH FIRST FIT
+ka initial #1 loss=-0.9840759242576244
+ka initial #2 loss=-0.9846451334401802
+ka initial #3
+ka initial #4 loss=-0.9853081771060057
+ka initial #5
+ka initial #6
+ka initial #7
+ka initial #8
+ka initial #9
+ka initial #10
+ka initial #11
+ka initial #12
+ka initial #13
+ka initial #14
+ka initial #15 loss=-0.9856063868021872
+ka initial #16
+ka initial #17
+ka initial #18
+ka initial #19
+ka initial #20
+DONE WITH FIRST FIT
+ch initial #1 loss=-0.9451905037194165
+ch initial #2
+ch initial #3 loss=-0.9457308437232848
+ch initial #4
+ch initial #5 loss=-0.9480914464287203
+ch initial #6
+ch initial #7
+ch initial #8
+ch initial #9
+ch initial #10
+ch initial #11
+ch initial #12
+ch initial #13
+ch initial #14
+ch initial #15
+ch initial #16
+ch initial #17
+ch initial #18
+ch initial #19
+ch initial #20
+DONE WITH FIRST FIT
+ut initial #1 loss=-0.9444216254383502
+ut initial #2 loss=-0.9466758304547092
+ut initial #3
+ut initial #4 loss=-0.9470446279727829
+ut initial #5 loss=-0.94710641774261
+ut initial #6
+ut initial #7
+ut initial #8
+ut initial #9
+ut initial #10
+ut initial #11 loss=-0.9472690594422132
+ut initial #12
+ut initial #13
+ut initial #14
+ut initial #15
+ut initial #16
+ut initial #17
+ut initial #18
+ut initial #19 loss=-0.9475739697597686
+ut initial #20
+DONE WITH FIRST FIT
+gj initial #1 loss=-0.933570014019962
+gj initial #2 loss=-0.934359432974389
+gj initial #3
+gj initial #4
+gj initial #5
+gj initial #6
+gj initial #7
+gj initial #8
+gj initial #9
+gj initial #10
+gj initial #11
+gj initial #12
+gj initial #13
+gj initial #14
+gj initial #15
+gj initial #16
+gj initial #17 loss=-0.9343647960950905
+gj initial #18
+gj initial #19
+gj initial #20
+DONE WITH FIRST FIT
+kl initial #1 loss=-0.9693473857252256
+kl initial #2 loss=-0.9699886864734923
+kl initial #3
+kl initial #4
+kl initial #5
+kl initial #6
+kl initial #7
+kl initial #8
+kl initial #9
+kl initial #10 loss=-0.9705912868765021
+kl initial #11
+kl initial #12
+kl initial #13 loss=-0.9706160674459552
+kl initial #14
+kl initial #15 loss=-0.9708070266459783
+kl initial #16
+kl initial #17
+kl initial #18
+kl initial #19
+kl initial #20
+DONE WITH FIRST FIT
+tg initial #1 loss=-0.93435402614375
+tg initial #2
+tg initial #3
+tg initial #4
+tg initial #5
+tg initial #6
+tg initial #7
+tg initial #8
+tg initial #9
+tg initial #10
+tg initial #11
+tg initial #12
+tg initial #13
+tg initial #14
+tg initial #15
+tg initial #16
+tg initial #17
+tg initial #18
+tg initial #19
+tg initial #20
+DONE WITH FIRST FIT
+ga initial #1 loss=-0.9491491417280975
+ga initial #2
+ga initial #3
+ga initial #4
+ga initial #5
+ga initial #6 loss=-0.9491535831539151
+ga initial #7
+ga initial #8 loss=-0.9495763907883908
+ga initial #9
+ga initial #10
+ga initial #11
+ga initial #12
+ga initial #13
+ga initial #14
+ga initial #15
+ga initial #16
+ga initial #17
+ga initial #18
+ga initial #19
+ga initial #20
+DONE WITH FIRST FIT
+jh initial #1 loss=-0.8887448657152249
+jh initial #2
+jh initial #3 loss=-0.901210257243382
+jh initial #4 loss=-0.9013132431580616
+jh initial #5
+jh initial #6
+jh initial #7
+jh initial #8
+jh initial #9
+jh initial #10
+jh initial #11
+jh initial #12 loss=-0.9014046726425106
+jh initial #13
+jh initial #14
+jh initial #15
+jh initial #16
+jh initial #17
+jh initial #18 loss=-0.9014272870572937
+jh initial #19
+jh initial #20 loss=-0.9014567502623116
+DONE WITH FIRST FIT
+rj initial #1 loss=-0.9218632249373137
+rj initial #2
+rj initial #3
+rj initial #4
+rj initial #5
+rj initial #6 loss=-0.9218632331809891
+rj initial #7
+rj initial #8
+rj initial #9
+rj initial #10
+rj initial #11
+rj initial #12
+rj initial #13
+rj initial #14
+rj initial #15 loss=-0.9218982518084686
+rj initial #16
+rj initial #17
+rj initial #18 loss=-0.9219072749849498
+rj initial #19
+rj initial #20
+DONE WITH FIRST FIT
+la initial #1 loss=-0.8189401855208877
+la initial #2 loss=-0.8208831749079187
+la initial #3
+la initial #4
+la initial #5
+la initial #6 loss=-0.8209022125859381
+la initial #7
+la initial #8
+la initial #9
+la initial #10
+la initial #11 loss=-0.8217508419949828
+la initial #12
+la initial #13 loss=-0.8217554012709332
+la initial #14
+la initial #15
+la initial #16
+la initial #17
+la initial #18
+la initial #19
+la initial #20
+DONE WITH FIRST FIT
+mp initial #1 loss=-0.9192160434734782
+mp initial #2 loss=-0.9255174014670063
+mp initial #3
+mp initial #4
+mp initial #5
+mp initial #6
+mp initial #7
+mp initial #8 loss=-0.9255193549334229
+mp initial #9
+mp initial #10
+mp initial #11
+mp initial #12
+mp initial #13
+mp initial #14
+mp initial #15
+mp initial #16
+mp initial #17
+mp initial #18
+mp initial #19
+mp initial #20
+DONE WITH FIRST FIT
+pb initial #1 loss=-0.9419048698562569
+pb initial #2
+pb initial #3
+pb initial #4
+pb initial #5
+pb initial #6
+pb initial #7
+pb initial #8 loss=-0.9419381243782355
+pb initial #9
+pb initial #10 loss=-0.9444501178852757
+pb initial #11
+pb initial #12
+pb initial #13
+pb initial #14
+pb initial #15
+pb initial #16
+pb initial #17
+pb initial #18
+pb initial #19
+pb initial #20 loss=-0.9444501209800222
+DONE WITH FIRST FIT
+mn initial #1 loss=-0.9374488347636273
+mn initial #2
+mn initial #3
+up initial #1 loss=-0.9002663462966818
+up initial #2 loss=-0.9005747785709389
+up initial #3 loss=-0.9019231542115634
+up initial #4
+up initial #5
+up initial #6
+up initial #7
+1022.634 minutes for all states ending on 2021-12-01

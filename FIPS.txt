@@ -1,0 +1,127 @@
+AL-Jefferson 01073
+AL-Mobile 01097
+AZ-Maricopa 04013
+AZ-Pima 04019
+AZ-Yuma 04027
+CA-Alameda 0601
+CA-Contra Costa 06013
+CA-Fresno 06019
+CA-Kern 06029
+CA-Los Angeles 06037
+CA-Orange 06059
+CA-Riverside 06065
+CA-Sacramento 06067
+CA-San Bernardino 06071
+CA-San Diego 06073
+CA-San Joaquin 06077
+CA-Santa Clara 06085
+CA-Stanislaus 06099
+CA-Tulare 06107
+CO-Adams 0801
+CO-Arapahoe 0805
+CO-Denver 08031
+CT-Fairfield 0901
+CT-Hartford 0903
+CT-New Haven 0909
+DE-New Castle 1003
+DE-Sussex 1005
+FL-Broward 12011
+FL-Duval 12031
+FL-Hillsborough 12057
+FL-Lee 12071
+FL-Miami-Dade 12086
+FL-Orange 12095
+FL-Palm Beach 12099
+FL-Pinellas 12103
+FL-Polk 12105
+GA-Cobb 13067
+GA-DeKalb 13089
+GA-Fulton 13121
+GA-Gwinnett 13135
+IL-Cook 17031
+IL-DuPage 17043
+IL-Kane 17089
+IL-Lake 17097
+IN-Lake 18089
+IN-Marion 18097
+IA-Polk 19153
+MD-Anne Arundel 2403
+MD-Baltimore 2405
+MD-Montgomery 24031
+MD-Prince George's 24033
+MA-Bristol 2505
+MA-Essex 2509
+MA-Hampden 25013
+MA-Middlesex 25017
+MA-Norfolk 25021
+MA-Plymouth 25023
+MA-Suffolk 25025
+MA-Worcester 25027
+MI-Kent 26081
+MI-Macomb 26099
+MI-Oakland 26125
+MI-Wayne 26163
+MN-Hennepin 27053
+MO-St. Louis 29189
+NE-Douglas 31055
+NV-Clark 3203
+NJ-Bergen 3403
+NJ-Burlington 3405
+NJ-Camden 3407
+NJ-Essex 34013
+NJ-Hudson 34017
+NJ-Mercer 34021
+NJ-Middlesex 34023
+NJ-Monmouth 34025
+NJ-Morris 34027
+NJ-Ocean 34029
+NJ-Passaic 34031
+NJ-Somerset 34035
+NJ-Union 34039
+NY-Bronx 3605
+NY-Dutchess 36027
+NY-Erie 36029
+NY-Kings 36047
+NY-Nassau 36059
+NY-New York 36061
+NY-Orange 36071
+NY-Queens 36081
+NY-Richmond 36085
+NY-Rockland 36087
+NY-Suffolk 36103
+NY-Westchester 36119
+NC-Mecklenburg 37119
+NC-Wake 37183
+OH-Cuyahoga 39035
+OH-Franklin 39049
+OK-Oklahoma 40109
+OK-Tulsa 40143
+PA-Berks 42011
+PA-Bucks 42017
+PA-Delaware 42045
+PA-Lehigh 42077
+PA-Luzerne 42079
+PA-Montgomery 42091
+PA-Northampton 42095
+PA-Philadelphia 42101
+RI-Providence 4407
+SC-Charleston 45019
+SC-Greenville 45045
+SD-Minnehaha 46099
+TN-Davidson 47037
+TN-Shelby 47157
+TX-Bexar 48029
+TX-Cameron 48061
+TX-Dallas 48113
+TX-El Paso 48141
+TX-Fort Bend 48157
+TX-Hidalgo 48215
+TX-Nueces 48355
+TX-Tarrant 48439
+TX-Travis 48453
+UT-Salt Lake 49035
+VA-Fairfax 51059
+VA-Prince William 51153
+WA-King 53033
+WA-Snohomish 53061
+WI-Milwaukee 55079

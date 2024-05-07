@@ -1,0 +1,265 @@
+Date,Transmission Category,Case Disposition,Case Count,
+03/05/20,Community,Confirmed,2,2
+03/06/20,Community,Confirmed,1,3
+03/06/20,From Contact,Confirmed,4,7
+03/08/20,From Contact,Confirmed,6,13
+03/09/20,From Contact,Confirmed,1,14
+03/11/20,From Contact,Confirmed,1,15
+03/11/20,Community,Confirmed,3,18
+03/12/20,Unknown,Confirmed,1,19
+03/12/20,Community,Confirmed,3,22
+03/12/20,From Contact,Confirmed,2,24
+03/13/20,From Contact,Confirmed,1,25
+03/13/20,Community,Confirmed,3,28
+03/14/20,Community,Confirmed,3,31
+03/14/20,From Contact,Confirmed,1,32
+03/15/20,Community,Confirmed,2,34
+03/16/20,From Contact,Confirmed,2,36
+03/16/20,Community,Confirmed,4,40
+03/17/20,From Contact,Confirmed,2,42
+03/17/20,Community,Confirmed,9,51
+03/18/20,Community,Confirmed,9,60
+03/18/20,From Contact,Confirmed,3,63
+03/18/20,Unknown,Confirmed,2,65
+03/19/20,Community,Confirmed,5,70
+03/19/20,From Contact,Confirmed,4,74
+03/19/20,Unknown,Confirmed,1,75
+03/20/20,Community,Confirmed,8,83
+03/20/20,From Contact,Confirmed,2,85
+03/21/20,Community,Confirmed,21,106
+03/21/20,From Contact,Confirmed,3,109
+03/22/20,From Contact,Confirmed,4,113
+03/22/20,Community,Confirmed,24,137
+03/23/20,Community,Confirmed,26,163
+03/23/20,From Contact,Confirmed,5,168
+03/24/20,From Contact,Confirmed,3,171
+03/24/20,Community,Confirmed,24,195
+03/24/20,Unknown,Confirmed,2,197
+03/25/20,From Contact,Confirmed,11,208
+03/25/20,Community,Confirmed,35,243
+03/25/20,Unknown,Confirmed,4,247
+03/26/20,From Contact,Confirmed,6,253
+03/26/20,Unknown,Confirmed,1,254
+03/26/20,Community,Confirmed,29,283
+03/27/20,Unknown,Confirmed,4,287
+03/27/20,From Contact,Confirmed,4,291
+03/27/20,Community,Confirmed,28,319
+03/28/20,Community,Confirmed,22,341
+03/28/20,From Contact,Confirmed,3,344
+03/28/20,Unknown,Confirmed,4,348
+03/29/20,Community,Confirmed,29,377
+03/29/20,Unknown,Confirmed,2,379
+03/29/20,From Contact,Confirmed,6,385
+03/30/20,Community,Confirmed,27,412
+03/30/20,From Contact,Confirmed,4,416
+03/30/20,Unknown,Confirmed,2,418
+03/31/20,Unknown,Confirmed,4,422
+03/31/20,From Contact,Confirmed,6,428
+03/31/20,Community,Confirmed,18,446
+04/01/20,Unknown,Confirmed,2,448
+04/01/20,Community,Confirmed,27,475
+04/01/20,From Contact,Confirmed,10,485
+04/02/20,From Contact,Confirmed,22,507
+04/02/20,Unknown,Confirmed,11,518
+04/02/20,Community,Confirmed,28,546
+04/03/20,Community,Confirmed,39,585
+04/03/20,Unknown,Confirmed,7,592
+04/03/20,From Contact,Confirmed,11,603
+04/04/20,From Contact,Confirmed,6,609
+04/04/20,Unknown,Confirmed,1,610
+04/04/20,Community,Confirmed,13,623
+04/05/20,Unknown,Confirmed,5,628
+04/05/20,From Contact,Confirmed,3,631
+04/05/20,Community,Confirmed,13,644
+04/06/20,From Contact,Confirmed,15,659
+04/06/20,Unknown,Confirmed,5,664
+04/06/20,Community,Confirmed,32,696
+04/07/20,From Contact,Confirmed,11,707
+04/07/20,Community,Confirmed,15,722
+04/07/20,Unknown,Confirmed,8,730
+04/08/20,From Contact,Confirmed,32,762
+04/08/20,Unknown,Confirmed,4,766
+04/08/20,Community,Confirmed,23,789
+04/09/20,From Contact,Confirmed,23,812
+04/09/20,Unknown,Confirmed,5,817
+04/09/20,Community,Confirmed,51,868
+04/10/20,From Contact,Confirmed,16,884
+04/10/20,Community,Confirmed,50,934
+04/10/20,Unknown,Confirmed,3,937
+04/11/20,Community,Confirmed,17,954
+04/11/20,From Contact,Confirmed,6,960
+04/12/20,From Contact,Confirmed,11,971
+04/12/20,Unknown,Confirmed,1,972
+04/12/20,Community,Confirmed,31,1003
+04/13/20,From Contact,Confirmed,13,1016
+04/13/20,Community,Confirmed,14,1030
+04/14/20,From Contact,Confirmed,8,1038
+04/14/20,Community,Confirmed,15,1053
+04/14/20,Unknown,Confirmed,2,1055
+04/15/20,Community,Confirmed,20,1075
+04/15/20,From Contact,Confirmed,21,1096
+04/16/20,From Contact,Confirmed,8,1104
+04/16/20,Community,Confirmed,41,1145
+04/17/20,From Contact,Confirmed,10,1155
+04/17/20,Community,Confirmed,28,1183
+04/18/20,Community,Confirmed,15,1198
+04/18/20,From Contact,Confirmed,15,1213
+04/19/20,From Contact,Confirmed,4,1217
+04/19/20,Community,Confirmed,17,1234
+04/20/20,Community,Confirmed,27,1261
+04/20/20,From Contact,Confirmed,8,1269
+04/21/20,Community,Confirmed,18,1287
+04/21/20,Unknown,Confirmed,2,1289
+04/21/20,From Contact,Confirmed,9,1298
+04/22/20,Community,Confirmed,29,1327
+04/22/20,From Contact,Confirmed,20,1347
+04/22/20,Unknown,Confirmed,7,1354
+04/23/20,From Contact,Confirmed,13,1367
+04/23/20,Community,Confirmed,20,1387
+04/24/20,Community,Confirmed,29,1416
+04/24/20,From Contact,Confirmed,11,1427
+04/25/20,Community,Confirmed,11,1438
+04/25/20,From Contact,Confirmed,6,1444
+04/26/20,From Contact,Confirmed,16,1460
+04/26/20,Community,Confirmed,25,1485
+04/27/20,From Contact,Confirmed,18,1503
+04/27/20,Community,Confirmed,17,1520
+04/28/20,From Contact,Confirmed,10,1530
+04/28/20,Unknown,Confirmed,1,1531
+04/28/20,Community,Confirmed,23,1554
+04/29/20,Community,Confirmed,28,1582
+04/29/20,From Contact,Confirmed,11,1593
+04/30/20,From Contact,Confirmed,18,1611
+04/30/20,Community,Confirmed,39,1650
+05/01/20,Community,Confirmed,28,1678
+05/01/20,From Contact,Confirmed,32,1710
+05/02/20,From Contact,Confirmed,12,1722
+05/02/20,Community,Confirmed,18,1740
+05/03/20,From Contact,Confirmed,26,1766
+05/03/20,Community,Confirmed,28,1794
+05/03/20,Unknown,Confirmed,2,1796
+05/04/20,Unknown,Confirmed,1,1797
+05/04/20,From Contact,Confirmed,11,1808
+05/04/20,Community,Confirmed,11,1819
+05/05/20,From Contact,Confirmed,33,1852
+05/05/20,Unknown,Confirmed,1,1853
+05/05/20,Community,Confirmed,26,1879
+05/06/20,Unknown,Confirmed,2,1881
+05/06/20,From Contact,Confirmed,16,1897
+05/06/20,Community,Confirmed,24,1921
+05/07/20,Community,Confirmed,24,1945
+05/07/20,From Contact,Confirmed,15,1960
+05/08/20,From Contact,Confirmed,9,1969
+05/08/20,Unknown,Confirmed,1,1970
+05/08/20,Community,Confirmed,17,1987
+05/09/20,Community,Confirmed,13,2000
+05/09/20,From Contact,Confirmed,11,2011
+05/10/20,Community,Confirmed,11,2022
+05/10/20,From Contact,Confirmed,7,2029
+05/11/20,Community,Confirmed,10,2039
+05/11/20,From Contact,Confirmed,5,2044
+05/12/20,Community,Confirmed,21,2065
+05/12/20,From Contact,Confirmed,7,2072
+05/12/20,Unknown,Confirmed,2,2074
+05/13/20,From Contact,Confirmed,4,2078
+05/13/20,Community,Confirmed,14,2092
+05/13/20,Unknown,Confirmed,15,2107
+05/14/20,Community,Confirmed,10,2117
+05/14/20,From Contact,Confirmed,9,2126
+05/14/20,Unknown,Confirmed,9,2135
+05/15/20,From Contact,Confirmed,12,2147
+05/15/20,Unknown,Confirmed,2,2149
+05/15/20,Community,Confirmed,17,2166
+05/16/20,From Contact,Confirmed,2,2168
+05/16/20,Unknown,Confirmed,4,2172
+05/16/20,Community,Confirmed,6,2178
+05/17/20,From Contact,Confirmed,12,2190
+05/17/20,Community,Confirmed,8,2198
+05/18/20,Community,Confirmed,14,2212
+05/18/20,From Contact,Confirmed,16,2228
+05/18/20,Unknown,Confirmed,2,2230
+05/19/20,From Contact,Confirmed,21,2251
+05/19/20,Unknown,Confirmed,3,2254
+05/19/20,Community,Confirmed,24,2278
+05/20/20,Community,Confirmed,11,2289
+05/20/20,From Contact,Confirmed,20,2309
+05/21/20,From Contact,Confirmed,17,2326
+05/21/20,Community,Confirmed,24,2350
+05/21/20,Unknown,Confirmed,1,2351
+05/22/20,Unknown,Confirmed,1,2352
+05/22/20,From Contact,Confirmed,13,2365
+05/22/20,Community,Confirmed,8,2373
+05/23/20,From Contact,Confirmed,13,2386
+05/23/20,Community,Confirmed,6,2392
+05/23/20,Unknown,Confirmed,2,2394
+05/24/20,Community,Confirmed,5,2399
+05/24/20,Unknown,Confirmed,3,2402
+05/24/20,From Contact,Confirmed,7,2409
+05/25/20,Community,Confirmed,13,2422
+05/25/20,From Contact,Confirmed,10,2432
+05/25/20,Unknown,Confirmed,1,2433
+05/26/20,From Contact,Confirmed,9,2442
+05/26/20,Community,Confirmed,10,2452
+05/27/20,Community,Confirmed,25,2477
+05/27/20,From Contact,Confirmed,19,2496
+05/27/20,Unknown,Confirmed,1,2497
+05/28/20,From Contact,Confirmed,23,2520
+05/28/20,Unknown,Confirmed,1,2521
+05/28/20,Community,Confirmed,17,2538
+05/29/20,Community,Confirmed,11,2549
+05/29/20,From Contact,Confirmed,10,2559
+05/30/20,From Contact,Confirmed,7,2566
+05/30/20,Community,Confirmed,8,2574
+05/31/20,Community,Confirmed,15,2589
+05/31/20,Unknown,Confirmed,1,2590
+05/31/20,From Contact,Confirmed,11,2601
+06/01/20,Community,Confirmed,12,2613
+06/01/20,Unknown,Confirmed,3,2616
+06/01/20,From Contact,Confirmed,7,2623
+06/02/20,Community,Confirmed,13,2636
+06/02/20,From Contact,Confirmed,14,2650
+06/02/20,Unknown,Confirmed,8,2658
+06/03/20,Unknown,Confirmed,14,2672
+06/03/20,From Contact,Confirmed,14,2686
+06/03/20,Community,Confirmed,11,2697
+06/04/20,Unknown,Confirmed,9,2706
+06/04/20,From Contact,Confirmed,5,2711
+06/04/20,Community,Confirmed,1,2712
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

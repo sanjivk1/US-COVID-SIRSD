@@ -1,0 +1,136 @@
+County,Color,Date
+AL-Jefferson,"{\cellcolor[rgb]{0,1,0}green}",2020-05-12
+AL-Mobile,"{\cellcolor[rgb]{0,1,0}green}",2020-05-18
+AZ-Maricopa,"{\cellcolor[rgb]{0,1,0}green}",2020-05-23
+AZ-Pima,"{\cellcolor[rgb]{0,1,0}green}",2020-05-18
+AZ-Yuma,"{\cellcolor[rgb]{0,1,0}green}",2020-05-15
+CA-Alameda,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-Contra Costa,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-Fresno,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-02
+CA-Kern,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-08
+CA-Los Angeles,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-28
+CA-Orange,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-31
+CA-Riverside,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-Sacramento,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-San Bernardino,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-San Diego,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-San Joaquin,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-Santa Clara,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CA-Stanislaus,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-28
+CA-Tulare,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-26
+CO-Adams,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-05-30
+CO-Arapahoe,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-09
+CO-Denver,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-05-31
+CT-Fairfield,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+CT-Hartford,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-30
+CT-New Haven,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-27
+DE-New Castle,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-19
+DE-Sussex,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-19
+DC-District of Columbia,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-22
+FL-Broward,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+FL-Duval,"{\cellcolor[rgb]{0,1,0}green}",2020-06-10
+FL-Hillsborough,"{\cellcolor[rgb]{0,1,0}green}",2020-06-04
+FL-Lee,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+FL-Miami-Dade,"{\cellcolor[rgb]{0,1,0}green}",2020-06-11
+FL-Orange,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+FL-Palm Beach,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+FL-Pinellas,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+FL-Polk,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+GA-Cobb,"{\cellcolor[rgb]{0,1,0}green}",2020-06-16
+GA-DeKalb,"{\cellcolor[rgb]{0,1,0}green}",2020-06-16
+GA-Fulton,"{\cellcolor[rgb]{0,1,0}green}",2020-06-16
+GA-Gwinnett,"{\cellcolor[rgb]{0,1,0}green}",2020-06-16
+IL-Cook,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-10
+IL-DuPage,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-10
+IL-Kane,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-10
+IL-Lake,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-10
+IL-Will,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-10
+IN-Lake,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+IN-Marion,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+IA-Polk,"{\cellcolor[rgb]{0,1,0}green}",2020-06-04
+KY-Jefferson,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-29
+LA-East Baton Rouge,"{\cellcolor[rgb]{0,1,0}green}",2020-06-05
+LA-Jefferson,"{\cellcolor[rgb]{0,1,0}green}",2020-06-05
+LA-Orleans,"{\cellcolor[rgb]{0,1,0}green}",2020-06-05
+MD-Anne Arundel,"{\cellcolor[rgb]{0,1,0}green}",2020-06-12
+MD-Baltimore,"{\cellcolor[rgb]{0,1,0}green}",2020-06-20
+MD-Baltimore City,"{\cellcolor[rgb]{0,1,0}green}",2020-06-14
+MD-Montgomery,"{\cellcolor[rgb]{0,1,0}green}",2020-06-12
+MD-Prince George's,"{\cellcolor[rgb]{0,1,0}green}",2020-06-20
+MA-Bristol,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-05
+MA-Essex,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-30
+MA-Hampden,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+MA-Middlesex,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-29
+MA-Norfolk,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-25
+MA-Plymouth,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-05
+MA-Suffolk,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-30
+MA-Worcester,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-05
+MI-Kent,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-21
+MI-Macomb,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-13
+MI-Oakland,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-08
+MI-Wayne,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-08
+MN-Hennepin,"{\cellcolor[rgb]{0,1,0}green}",2020-06-11
+MO-St. Louis,"{\cellcolor[rgb]{0,1,0}green}",2020-06-16
+NE-Douglas,"{\cellcolor[rgb]{0,1,0}green}",2020-06-22
+NV-Clark,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-29
+NJ-Bergen,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Burlington,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-05
+NJ-Camden,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Essex,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Hudson,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Mercer,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-05
+NJ-Middlesex,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Monmouth,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Morris,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Ocean,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Passaic,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-05
+NJ-Somerset,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NJ-Union,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-22
+NY-Bronx,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Dutchess,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Erie,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-06
+NY-Kings,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Nassau,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-New York,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-07
+NY-Orange,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Queens,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Richmond,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Rockland,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NY-Suffolk,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-06
+NY-Westchester,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-19
+NC-Mecklenburg,"{\cellcolor[rgb]{0,1,0}green}",2020-05-23
+NC-Wake,"{\cellcolor[rgb]{0,1,0}green}",2020-05-25
+OH-Cuyahoga,"{\cellcolor[rgb]{0,1,0}green}",2020-05-21
+OH-Franklin,"{\cellcolor[rgb]{0,1,0}green}",2020-05-23
+OK-Oklahoma,"{\cellcolor[rgb]{0,1,0}green}",2020-06-11
+OK-Tulsa,"{\cellcolor[rgb]{0,1,0}green}",2020-06-10
+PA-Berks,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+PA-Bucks,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+PA-Delaware,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+PA-Lehigh,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+PA-Luzerne,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+PA-Montgomery,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+PA-Northampton,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-30
+PA-Philadelphia,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-26
+RI-Providence,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-06-30
+SC-Charleston,"{\cellcolor[rgb]{0,1,0}green}",2020-05-23
+SC-Greenville,"{\cellcolor[rgb]{0,1,0}green}",2020-05-11
+SD-Minnehaha,"{\cellcolor[rgb]{0,1,0}green}",2020-06-14
+TN-Davidson,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-01
+TN-Shelby,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-05-22
+TX-Bexar,"{\cellcolor[rgb]{0,1,0}green}",2020-06-04
+TX-Cameron,"{\cellcolor[rgb]{0,1,0}green}",2020-06-10
+TX-Dallas,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+TX-El Paso,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+TX-Fort Bend,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+TX-Harris,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+TX-Hidalgo,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+TX-Nueces,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+TX-Tarrant,"{\cellcolor[rgb]{0,1,0}green}",2020-06-06
+TX-Travis,"{\cellcolor[rgb]{0,1,0}green}",2020-06-03
+UT-Salt Lake,"{\cellcolor[rgb]{0,1,0}green}",2020-05-02
+VA-Fairfax,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-14
+VA-Prince William,"{\cellcolor[rgb]{0.863, 0.078, 0.235} red}",2020-07-01
+WA-King,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-08
+WA-Snohomish,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-06-08
+WI-Milwaukee,"{\cellcolor[rgb]{1, 0.647, 0}yellow}",2020-07-01
