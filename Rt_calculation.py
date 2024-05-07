@@ -352,10 +352,59 @@ def RMSE_plot():
 	return
 
 
+def R0_state(state):
+	ConfirmFile = 'JHU/JHU_Confirmed-counties.csv'
+	df = pd.read_csv(ConfirmFile)
+	confirmed = df[df.iloc[:, 0] == state]
+
+	PopFile = 'JHU/CountyPopulation.csv'
+	df = pd.read_csv(PopFile)
+	n_0 = df[df.iloc[:, 0] == state].iloc[0]['POP']
+
+	sd_folder = f'50Counties/init_only_2020-08-31'
+	SIR_folder = f'50Counties/SIR'
+	df1 = pd.read_csv(f'{sd_folder}/{state}/sim.csv')
+	G1 = df1[df1['series'] == 'G'].iloc[0, 1:]
+	df2 = pd.read_csv(f'{SIR_folder}/{state}/sim.csv')
+	G2 = df2[df2['series'] == 'G'].iloc[0, 1:]
+	dates_str = G1.index
+	confirmed = confirmed.iloc[0][dates_str[0]:dates_str[-1]]
+
+	dG1 = [G1.iloc[i] - G1.iloc[i - 1] for i in range(1, len(G1))]
+	dG2 = [G2.iloc[i] - G2.iloc[i - 1] for i in range(1, len(G2))]
+	dConfirmed = [confirmed.iloc[i] - confirmed.iloc[i - 1] for i in range(1, len(confirmed))]
+
+	dates = [datetime.datetime.strptime(d, '%Y-%m-%d') for d in dates_str]
+
+	Rt_c = Rt_series(dConfirmed)
+	Rt1 = Rt_series(dG1)
+	Rt2 = Rt_series(dG2)
+	return Rt1[0], Rt2[0]
+
+
+def R0_all():
+	folder = '50Counties/comparison/R0'
+	if not os.path.exists(folder):
+		os.makedirs(folder)
+	R0s_sd = []
+	R0s_SIR = []
+	for state in states:
+		R0_sd, R0_SIR = R0_state(state)
+		R0s_sd.append(R0_sd)
+		R0s_SIR.append(R0_SIR)
+	df = pd.DataFrame(columns=['state', 'R0_SD', 'R0_SIR'])
+	df['state'] = states
+	df['R0_SD'] = R0s_sd
+	df['R0_SIR'] = R0s_SIR
+	df.to_csv(f'{folder}/R0.csv',index=False)
+	return
+
+
 def main():
 	# gamma_plotter()
 	# RMSE_all()
-	RMSE_plot()
+	# RMSE_plot()
+	R0_all()
 	return
 
 
