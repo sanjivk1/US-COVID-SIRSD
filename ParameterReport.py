@@ -49,7 +49,8 @@ def report_para():
 
     df_sir = pd.DataFrame(columns=['County', 'beta', 'gamma', 'eta'])
     df_sd_init = pd.DataFrame(columns=['County', 'beta', 'gamma', 'gamma2', 'a1', 'a2', 'a3', 'eta', 'c1'])
-    df_sd_full = pd.DataFrame()
+    df_sd_full = pd.DataFrame(columns=[
+        'County', 'beta', 'gamma', 'gamma2', 'a1', 'a2', 'a3', 'h', 'Hiding_init', 'k', 'k2', 'eta', 'c1', 'reopen'])
     for state in states_init:
         para_sir = pd.read_csv(f'{sir_dir}/{state}/para.csv')
         para_sir = [state] + list(para_sir[['beta', 'gamma', 'eta']].iloc[0])
@@ -57,11 +58,16 @@ def report_para():
 
         para_sd_init = pd.read_csv(f'{sd_init_dir}/{state}/para.csv')
         para_sd_init = [state] + list(para_sd_init[['beta', 'gamma', 'gamma2', 'a1', 'a2', 'a3', 'eta', 'c1']].iloc[0])
-        df_sd_init.loc[len(df_sir)] = para_sd_init
-    print(df_sir.head(20))
-    print(df_sd_init.head(20))
+        df_sd_init.loc[len(df_sd_init)] = para_sd_init
     df_sir.to_csv('para report/SIR.csv', index=False)
     df_sd_init.to_csv('para report/SD_init.csv', index=False)
+
+    for state in states_full:
+        para_sd = pd.read_csv(f'{sd_full_dir}/{state}/para.csv')
+        para_sd = [state] + list(para_sd[[
+            'beta', 'gamma', 'gamma2', 'a1', 'a2', 'a3', 'h', 'Hiding_init', 'k', 'k2', 'eta', 'c1', 'reopen']].iloc[0])
+        df_sd_full.loc[len(df_sd_full)] = para_sd
+    df_sd_full.to_csv('para report/SD_full.csv', index=False)
     return
 
 
