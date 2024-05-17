@@ -20,8 +20,7 @@ def report_para():
         'NY-Richmond', 'NY-Rockland', 'NY-Suffolk', 'NY-Westchester', 'OH-Cuyahoga', 'OH-Franklin', 'PA-Berks',
         'PA-Bucks', 'PA-Delaware', 'PA-Lehigh', 'PA-Luzerne', 'PA-Montgomery', 'PA-Northampton', 'PA-Philadelphia',
         'RI-Providence', 'SD-Minnehaha', 'TN-Davidson', 'TN-Shelby', 'TX-Dallas', 'TX-Harris', 'TX-Tarrant',
-        'UT-Salt Lake', 'VA-Fairfax', 'VA-Prince William', 'WA-King', 'WA-Snohomish', 'WI-Milwaukee'
-    ]
+        'UT-Salt Lake', 'VA-Fairfax', 'VA-Prince William', 'WA-King', 'WA-Snohomish', 'WI-Milwaukee']
     states_full = [
         'AL-Jefferson', 'AL-Mobile', 'AZ-Maricopa', 'AZ-Pima', 'AZ-Yuma', 'CA-Alameda', 'CA-Contra Costa', 'CA-Fresno',
         'CA-Kern', 'CA-Los Angeles', 'CA-Orange', 'CA-Riverside', 'CA-Sacramento', 'CA-San Bernardino', 'CA-San Diego',
@@ -42,8 +41,7 @@ def report_para():
         'TN-Shelby', 'TX-Bexar', 'TX-Cameron', 'TX-Dallas', 'TX-El Paso', 'TX-Fort Bend', 'TX-Harris', 'TX-Hidalgo',
         'TX-Nueces', 'TX-Tarrant', 'TX-Travis', 'UT-Salt Lake', 'VA-Fairfax', 'VA-Prince William', 'WA-King',
         'WA-Snohomish', 'WI-Milwaukee', ]
-    print('length of states_init:', len(states_init))
-    print('length of states_full:', len(states_full))
+
     if not os.path.exists('para report'):
         os.makedirs('para report')
 
