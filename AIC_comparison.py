@@ -52,7 +52,23 @@ def AIC_scatter():
     fig.savefig('50Counties/comparison/AIC_scatter.png', bbox_inches="tight")
 
 
+def AIC_hist():
+    df = pd.read_csv('50Counties/comparison/AIC.csv')
+    cmap = ['red' if AIC_SD >= AIC_SIR else 'green' for AIC_SD, AIC_SIR in zip(df['AIC_SD'], df['AIC_SIR'])]
+    AIC_ratio = list(df['AIC_SD'] / df['AIC_SIR'])
+    fig = plt.figure()
+    fig.suptitle('AIC')
+    ax = fig.add_subplot()
+    ax.hist(AIC_ratio, edgecolor='black')
+    ax.axvline(np.mean(AIC_ratio), linestyle='dashed', color='tab:grey',
+               label=f'AVG={round(np.mean(AIC_ratio), 3)}')
+    ax.axvline(1, color='red')
+    ax.legend()
+    fig.savefig('50Counties/comparison/AIC_hist.png', bbox_inches="tight")
+
+
 if __name__ == '__main__':
     # AIC_compare()
-    AIC_boxplot()
+    # AIC_boxplot()
     # AIC_scatter()
+    AIC_hist()
