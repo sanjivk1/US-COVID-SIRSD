@@ -57,7 +57,7 @@ def AIC_hist():
     cmap = ['red' if AIC_SD >= AIC_SIR else 'green' for AIC_SD, AIC_SIR in zip(df['AIC_SD'], df['AIC_SIR'])]
     AIC_ratio = list(df['AIC_SD'] / df['AIC_SIR'])
     fig = plt.figure()
-    fig.suptitle('AIC')
+    fig.suptitle('Ratio of AIC(SIR-SD/SIR)')
     ax = fig.add_subplot()
     ax.hist(AIC_ratio, edgecolor='black')
     ax.axvline(np.mean(AIC_ratio), linestyle='dashed', color='tab:grey',
