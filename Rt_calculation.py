@@ -404,26 +404,41 @@ def R0_para_all():
     folder = '50Counties/comparison/R0'
     sd_folder = f'50Counties/init_only_2020-08-31'
     SIR_folder = f'50Counties/SIR'
+    SEIR_folder = '50Counties/SEIR_2020-05-15'
     if not os.path.exists(folder):
         os.makedirs(folder)
     R0s_sd = []
     R0s_SIR = []
+    R0s_SEIR = []
     for state in states:
+        # SIR-sd
         df = pd.read_csv(f'{sd_folder}/{state}/para.csv')
         b = df['beta'].iloc[0]
         g = df['gamma'].iloc[0]
         g2 = df['gamma2'].iloc[0]
         e = df['eta'].iloc[0]
         R0s_sd.append(b * e / (g + g2))
+
+        # SIR
         df = pd.read_csv(f'{SIR_folder}/{state}/para.csv')
         b = df['beta'].iloc[0]
         g = df['gamma'].iloc[0]
         e = df['eta'].iloc[0]
         R0s_SIR.append(b * e / g)
-    df = pd.DataFrame(columns=['state', 'R0_SD', 'R0_SIR'])
+
+        #SEIR
+        df = pd.read_csv(f'{SEIR_folder}/{state}/para.csv')
+        b = df['beta'].iloc[0]
+        bEI = df['betaEI'].iloc[0]
+        g = df['gamma'].iloc[0]
+        e = df['eta'].iloc[0]
+        R0s_SEIR.append(b * e / (g + bEI))
+
+    df = pd.DataFrame(columns=['state', 'R0_SD', 'R0_SIR', 'R0_SEIR'])
     df['state'] = states
     df['R0_SD'] = R0s_sd
     df['R0_SIR'] = R0s_SIR
+    df['R0_SEIR'] = R0s_SEIR
     df.to_csv(f'{folder}/R0_para.csv', index=False)
     return
 

@@ -36,7 +36,8 @@ theta2 = 0.8
 
 I_0 = 5
 beta_range = (0.1, 100)
-betaEI_range = (0.1, 100)
+beta_SEIR_range = (0.1, 50)
+betaEI_range = (0.1, 0.5)
 gamma_range = (0.04, 0.2)
 gamma2_range = (0.04, 0.2)
 # sigma_range = (0.001, 1)
@@ -616,7 +617,7 @@ def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
 
     para_best = []
     min_loss = 1000001
-    with concurrent.futures.ProcessPoolExecutor(max_workers=20) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=12) as executor:
         results = [executor.submit(fit_SEIR, confirmed, n_0) for _ in range(num_threads)]
         threads = 0
         for f in concurrent.futures.as_completed(results):
@@ -823,12 +824,12 @@ def fit_SEIR(confirmed, n_0):
     for c1 in np.arange(c1_range[0], c1_range[1], 0.01):
         for Geo in Geo_range:
             for theta in theta_range:
-                optimal = minimize(loss_SEIR, [uni(beta_range[0], beta_range[1]),
+                optimal = minimize(loss_SEIR, [uni(beta_SEIR_range[0], beta_SEIR_range[1]),
                                                uni(betaEI_range[0], betaEI_range[1]),
                                                uni(gamma_range[0], gamma_range[1]),
                                                uni(eta_range[0], eta_range[1])],
                                    args=(confirmed, n_0, SEIRG_sd, theta, Geo, c1), method='L-BFGS-B',
-                                   bounds=[beta_range, betaEI_range, gamma_range, eta_range])
+                                   bounds=[beta_SEIR_range, betaEI_range, gamma_range, eta_range])
                 current_loss = loss_SEIR(optimal.x, confirmed, n_0, SEIRG_sd, theta, Geo, c1)
                 if current_loss < min_loss:
                     min_loss = current_loss
@@ -1726,7 +1727,7 @@ def main():
 
     # validate_all(validate_end_date)
     # scatter_RMSE_validate_all(validate_end_date)
-    # fit_50_SEIR()
+    fit_50_SEIR()
     fit_50more_SEIR()
     return
 
