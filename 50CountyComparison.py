@@ -543,7 +543,7 @@ def fit_50_SIR(date='2020-05-15'):
     return
 
 
-def fit_50_SEIR(date='2020-05-15'):
+def fit_50_SEIR_SD(date='2020-05-15'):
     plt.switch_backend('agg')
     states = ['AZ-Maricopa', 'CA-Los Angeles', 'CT-Fairfield', 'CT-Hartford', 'CT-New Haven', 'DC-District of Columbia',
               'FL-Broward', 'FL-Miami-Dade', 'IL-Cook', 'IL-Lake', 'IN-Marion', 'LA-Jefferson', 'LA-Orleans',
@@ -556,7 +556,7 @@ def fit_50_SEIR(date='2020-05-15'):
     # states = ['AZ-Maricopa']
     # date = '2020-05-15'
     for state in states:
-        fit_SEIR_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
+        fit_SEIR_SD_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
                     'JHU/CountyPopulation.csv', date)
 
     return
@@ -580,7 +580,7 @@ def fit_50more_SIR(date='2020-05-15'):
     return
 
 
-def fit_50more_SEIR(date='2020-05-15'):
+def fit_50more_SEIR_SD(date='2020-05-15'):
     plt.switch_backend('agg')
     states = ['PA-Montgomery', 'NJ-Mercer', 'IL-DuPage', 'CA-Riverside', 'PA-Delaware', 'CA-San Diego',
               'MA-Hampden', 'NJ-Camden', 'NV-Clark', 'NY-Erie', 'MN-Hennepin', 'WI-Milwaukee', 'CO-Denver',
@@ -592,15 +592,15 @@ def fit_50more_SEIR(date='2020-05-15'):
               'IN-Lake', 'DE-New Castle', 'PA-Northampton', 'GA-Gwinnett', 'CO-Adams', 'PA-Luzerne']
     # date = '2020-05-15'
     for state in states:
-        fit_SEIR_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
+        fit_SEIR_SD_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
                     'JHU/CountyPopulation.csv', date)
 
     return
 
 
-def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
-    if not os.path.exists(f'50Counties/SEIR_{date}/{state}'):
-        os.makedirs(f'50Counties/SEIR_{date}/{state}')
+def fit_SEIR_SD_MT(state, SimFolder, ConfirmFile, PopFile, date):
+    if not os.path.exists(f'50Counties/SEIR_SD_{date}/{state}'):
+        os.makedirs(f'50Counties/SEIR_SD_{date}/{state}')
 
     print(state)
 
@@ -618,7 +618,7 @@ def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
     para_best = []
     min_loss = 1000001
     with concurrent.futures.ProcessPoolExecutor(max_workers=12) as executor:
-        results = [executor.submit(fit_SEIR, confirmed, n_0) for _ in range(num_threads)]
+        results = [executor.submit(fit_SEIR_SD, confirmed, n_0) for _ in range(num_threads)]
         threads = 0
         for f in concurrent.futures.as_completed(results):
             threads += 1
@@ -659,7 +659,7 @@ def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
     c0 = ['S', 'E', 'I', 'R', 'G']
     df = pd.DataFrame([S, E, I, R, G], columns=days[:len(S)])
     df.insert(0, 'series', c0)
-    df.to_csv(f'50Counties/SEIR_{date}/{state}/sim.csv', index=False)
+    df.to_csv(f'50Counties/SEIR_SD_{date}/{state}/sim.csv', index=False)
 
     # save parameters
     para_label = ['beta', 'betaEI', 'gamma', 'eta', 'theta', 'Geo', 'c1', 'RMSE', 'R2']
@@ -669,7 +669,7 @@ def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
     para_best = np.append(para_best, r2)
     # para_best.append(RMSE)
     df = pd.DataFrame([para_best], columns=para_label)
-    df.to_csv(f'50Counties/SEIR_{date}/{state}/para.csv', index=False)
+    df.to_csv(f'50Counties/SEIR_SD_{date}/{state}/para.csv', index=False)
 
     days = days[:size]
     days = [datetime.datetime.strptime(d, '%Y-%m-%d') for d in days]
@@ -680,7 +680,7 @@ def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
     ax.plot(days, confirmed, label='confirm')
     fig.autofmt_xdate()
     ax.legend()
-    fig.savefig(f'50Counties/SEIR_{date}/{state}/fit.png', bbox_inches="tight")
+    fig.savefig(f'50Counties/SEIR_SD_{date}/{state}/fit.png', bbox_inches="tight")
     plt.close(fig)
     # plt.show()
 
@@ -813,7 +813,7 @@ def fit_SIR(confirmed, n_0):
     return current_loss, para_best
 
 
-def fit_SEIR(confirmed, n_0):
+def fit_SEIR_SD(confirmed, n_0):
     # S, I, R, G, days = read_sim(state, SimFolder)
     # start_date = days[0]
     # # reopen_date = dates[0]
@@ -824,13 +824,13 @@ def fit_SEIR(confirmed, n_0):
     for c1 in np.arange(c1_range[0], c1_range[1], 0.01):
         for Geo in Geo_range:
             for theta in theta_range:
-                optimal = minimize(loss_SEIR, [uni(beta_SEIR_range[0], beta_SEIR_range[1]),
-                                               uni(betaEI_range[0], betaEI_range[1]),
-                                               uni(gamma_range[0], gamma_range[1]),
-                                               uni(eta_range[0], eta_range[1])],
+                optimal = minimize(loss_SEIR_SD, [uni(beta_SEIR_range[0], beta_SEIR_range[1]),
+                                                  uni(betaEI_range[0], betaEI_range[1]),
+                                                  uni(gamma_range[0], gamma_range[1]),
+                                                  uni(eta_range[0], eta_range[1])],
                                    args=(confirmed, n_0, SEIRG_sd, theta, Geo, c1), method='L-BFGS-B',
                                    bounds=[beta_SEIR_range, betaEI_range, gamma_range, eta_range])
-                current_loss = loss_SEIR(optimal.x, confirmed, n_0, SEIRG_sd, theta, Geo, c1)
+                current_loss = loss_SEIR_SD(optimal.x, confirmed, n_0, SEIRG_sd, theta, Geo, c1)
                 if current_loss < min_loss:
                     min_loss = current_loss
                     [beta, betaEI, gamma, eta] = optimal.x
@@ -870,7 +870,7 @@ def loss_SIR(point, confirmed, n_0, SIRG, theta, Geo):
     return - (theta * metric0 + (1 - theta) * metric1)
 
 
-def loss_SEIR(point, confirmed, n_0, SIRG, theta, Geo, c1):
+def loss_SEIR_SD(point, confirmed, n_0, SIRG, theta, Geo, c1):
     size = len(confirmed)
     beta = point[0]
     betaEI = point[1]
@@ -1727,8 +1727,8 @@ def main():
 
     # validate_all(validate_end_date)
     # scatter_RMSE_validate_all(validate_end_date)
-    fit_50_SEIR()
-    fit_50more_SEIR()
+    fit_50_SEIR_SD()
+    fit_50more_SEIR_SD()
     return
 
 
