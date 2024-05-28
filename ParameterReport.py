@@ -79,8 +79,8 @@ def report_sd_full():
     return
 
 
-def report_SEIR():
-    seir_dir = '50Counties/SEIR_2020-05-15'
+def report_SEIR_SD():
+    seir_dir = '50Counties/SEIR_SD_2020-05-15'
     states_init = [
         'AZ-Maricopa', 'CA-Los Angeles', 'CA-Orange', 'CA-Riverside', 'CA-San Bernardino', 'CA-San Diego', 'CO-Adams',
         'CO-Arapahoe', 'CO-Denver', 'CT-Fairfield', 'CT-Hartford', 'CT-New Haven', 'DC-District of Columbia',
@@ -107,6 +107,38 @@ def report_SEIR():
         para_seir = [state] + list(para_seir[['beta', 'betaEI', 'gamma', 'eta', 'c1']].iloc[0])
         df_seir.loc[len(df_seir)] = para_seir
 
+    df_seir.to_csv('para report/SEIR_SD.csv', index=False)
+    return
+
+
+def report_SEIR():
+    seir_dir = '50Counties/SEIR_2020-05-15'
+    states_init = [
+        'AZ-Maricopa', 'CA-Los Angeles', 'CA-Orange', 'CA-Riverside', 'CA-San Bernardino', 'CA-San Diego', 'CO-Adams',
+        'CO-Arapahoe', 'CO-Denver', 'CT-Fairfield', 'CT-Hartford', 'CT-New Haven', 'DC-District of Columbia',
+        'DE-New Castle', 'DE-Sussex', 'FL-Broward', 'FL-Miami-Dade', 'FL-Palm Beach', 'GA-DeKalb', 'GA-Fulton',
+        'GA-Gwinnett', 'IA-Polk', 'IL-Cook', 'IL-DuPage', 'IL-Kane', 'IL-Lake', 'IL-Will', 'IN-Lake', 'IN-Marion',
+        'LA-East Baton Rouge', 'LA-Jefferson', 'LA-Orleans', 'MA-Bristol', 'MA-Essex', 'MA-Hampden', 'MA-Middlesex',
+        'MA-Norfolk', 'MA-Plymouth', 'MA-Suffolk', 'MA-Worcester', 'MD-Anne Arundel', 'MD-Baltimore',
+        'MD-Baltimore City', 'MD-Montgomery', 'MD-Prince George\'s', 'MI-Kent', 'MI-Macomb', 'MI-Oakland', 'MI-Wayne',
+        'MN-Hennepin', 'MO-St. Louis', 'NJ-Bergen', 'NJ-Burlington', 'NJ-Camden', 'NJ-Essex', 'NJ-Hudson', 'NJ-Mercer',
+        'NJ-Middlesex', 'NJ-Monmouth', 'NJ-Morris', 'NJ-Ocean', 'NJ-Passaic', 'NJ-Somerset', 'NJ-Union', 'NV-Clark',
+        'NY-Bronx', 'NY-Dutchess', 'NY-Erie', 'NY-Kings', 'NY-Nassau', 'NY-New York', 'NY-Orange', 'NY-Queens',
+        'NY-Richmond', 'NY-Rockland', 'NY-Suffolk', 'NY-Westchester', 'OH-Cuyahoga', 'OH-Franklin', 'PA-Berks',
+        'PA-Bucks', 'PA-Delaware', 'PA-Lehigh', 'PA-Luzerne', 'PA-Montgomery', 'PA-Northampton', 'PA-Philadelphia',
+        'RI-Providence', 'SD-Minnehaha', 'TN-Davidson', 'TN-Shelby', 'TX-Dallas', 'TX-Harris', 'TX-Tarrant',
+        'UT-Salt Lake', 'VA-Fairfax', 'VA-Prince William', 'WA-King', 'WA-Snohomish', 'WI-Milwaukee']
+
+    if not os.path.exists('para report'):
+        os.makedirs('para report')
+
+    df_seir = pd.DataFrame(columns=['County', 'beta', 'betaEI', 'gamma', 'eta'])
+
+    for state in states_init:
+        para_seir = pd.read_csv(f'{seir_dir}/{state}/para.csv')
+        para_seir = [state] + list(para_seir[['beta', 'betaEI', 'gamma', 'eta']].iloc[0])
+        df_seir.loc[len(df_seir)] = para_seir
+
     df_seir.to_csv('para report/SEIR.csv', index=False)
     return
 
@@ -114,6 +146,7 @@ def report_SEIR():
 def report_para():
     # report_init_comparison()
     # report_sd_full()
+    # report_SEIR_SD()
     report_SEIR()
     return
 
