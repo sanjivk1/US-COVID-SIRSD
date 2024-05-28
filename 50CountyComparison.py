@@ -9,7 +9,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import sys
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
-from SIRfunctions import SIRG_combined, SIRG, weighting, SEIRG_sd
+from SIRfunctions import SIRG_combined, SIRG, weighting, SEIRG_sd, SEIRG
 import datetime
 from numpy.random import uniform as uni
 import os
@@ -37,6 +37,7 @@ theta2 = 0.8
 I_0 = 5
 beta_range = (0.1, 100)
 beta_SEIR_range = (0.1, 50)
+beta_SEIR_SD_range = (0.1, 100)
 betaEI_range = (0.1, 0.5)
 gamma_range = (0.04, 0.2)
 gamma2_range = (0.04, 0.2)
@@ -557,6 +558,25 @@ def fit_50_SEIR_SD(date='2020-05-15'):
     # date = '2020-05-15'
     for state in states:
         fit_SEIR_SD_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
+                       'JHU/CountyPopulation.csv', date)
+
+    return
+
+
+def fit_50_SEIR(date='2020-05-15'):
+    plt.switch_backend('agg')
+    states = ['AZ-Maricopa', 'CA-Los Angeles', 'CT-Fairfield', 'CT-Hartford', 'CT-New Haven', 'DC-District of Columbia',
+              'FL-Broward', 'FL-Miami-Dade', 'IL-Cook', 'IL-Lake', 'IN-Marion', 'LA-Jefferson', 'LA-Orleans',
+              'MD-Montgomery', 'MD-Prince George\'s', 'MA-Bristol', 'MA-Essex', 'MA-Middlesex', 'MA-Norfolk',
+              'MA-Plymouth', 'MA-Suffolk', 'MA-Worcester', 'MI-Macomb', 'MI-Oakland', 'MI-Wayne', 'NJ-Bergen',
+              'NJ-Essex', 'NJ-Hudson', 'NJ-Middlesex', 'NJ-Monmouth', 'NJ-Morris', 'NJ-Ocean', 'NJ-Passaic', 'NJ-Union',
+              'NY-Bronx', 'NY-Kings', 'NY-Nassau', 'NY-New York', 'NY-Orange', 'NY-Queens', 'NY-Richmond',
+              'NY-Rockland', 'NY-Suffolk', 'NY-Westchester', 'PA-Philadelphia', 'RI-Providence', 'TX-Dallas',
+              'TX-Harris', 'VA-Fairfax', 'WA-King']
+    # states = ['AZ-Maricopa']
+    # date = '2020-05-15'
+    for state in states:
+        fit_SEIR_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
                     'JHU/CountyPopulation.csv', date)
 
     return
@@ -593,6 +613,24 @@ def fit_50more_SEIR_SD(date='2020-05-15'):
     # date = '2020-05-15'
     for state in states:
         fit_SEIR_SD_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
+                       'JHU/CountyPopulation.csv', date)
+
+    return
+
+
+def fit_50more_SEIR(date='2020-05-15'):
+    plt.switch_backend('agg')
+    states = ['PA-Montgomery', 'NJ-Mercer', 'IL-DuPage', 'CA-Riverside', 'PA-Delaware', 'CA-San Diego',
+              'MA-Hampden', 'NJ-Camden', 'NV-Clark', 'NY-Erie', 'MN-Hennepin', 'WI-Milwaukee', 'CO-Denver',
+              'MD-Baltimore', 'FL-Palm Beach', 'OH-Franklin', 'PA-Bucks', 'MO-St. Louis', 'IL-Will', 'TX-Tarrant',
+              'NJ-Somerset', 'IL-Kane', 'CA-Orange', 'NJ-Burlington', 'TN-Davidson', 'UT-Salt Lake', 'GA-Fulton',
+              'MD-Baltimore City', 'TN-Shelby', 'PA-Berks', 'CO-Arapahoe', 'DE-Sussex', 'NY-Dutchess',
+              'VA-Prince William', 'PA-Lehigh', 'CA-San Bernardino', 'OH-Cuyahoga', 'SD-Minnehaha',
+              'LA-East Baton Rouge', 'MI-Kent', 'IA-Polk', 'WA-Snohomish', 'MD-Anne Arundel', 'GA-DeKalb',
+              'IN-Lake', 'DE-New Castle', 'PA-Northampton', 'GA-Gwinnett', 'CO-Adams', 'PA-Luzerne']
+    # date = '2020-05-15'
+    for state in states:
+        fit_SEIR_MT(state, f'50Counties/init_only_{end_date}/{state}', 'JHU/JHU_Confirmed-counties.csv',
                     'JHU/CountyPopulation.csv', date)
 
     return
@@ -681,6 +719,95 @@ def fit_SEIR_SD_MT(state, SimFolder, ConfirmFile, PopFile, date):
     fig.autofmt_xdate()
     ax.legend()
     fig.savefig(f'50Counties/SEIR_SD_{date}/{state}/fit.png', bbox_inches="tight")
+    plt.close(fig)
+    # plt.show()
+
+    return
+
+
+def fit_SEIR_MT(state, SimFolder, ConfirmFile, PopFile, date):
+    if not os.path.exists(f'50Counties/SEIR_{date}/{state}'):
+        os.makedirs(f'50Counties/SEIR_{date}/{state}')
+
+    print(state)
+
+    S, I, IH, IN, R, D, G, H, days = read_sim(state, SimFolder)
+    start_date = days[0]
+    reopen_date = date
+
+    df = pd.read_csv(ConfirmFile)
+    confirmed = df[df.iloc[:, 0] == state]
+    confirmed = confirmed.iloc[0].loc[start_date:reopen_date]
+    # print(confirmed)
+    df = pd.read_csv(PopFile)
+    n_0 = df[df.iloc[:, 0] == state].iloc[0]['POP']
+
+    para_best = []
+    min_loss = 1000001
+    with concurrent.futures.ProcessPoolExecutor(max_workers=12) as executor:
+        results = [executor.submit(fit_SEIR, confirmed, n_0) for _ in range(num_threads)]
+        threads = 0
+        for f in concurrent.futures.as_completed(results):
+            threads += 1
+            current_loss, para = f.result()
+            if current_loss < min_loss:
+                print(f'updated at {threads}')
+                min_loss = current_loss
+                para_best = para
+    # optimal = minimize(loss, [10, 0.05, 0.02], args=(confirmed, n_0, SIRG), method='L-BFGS-B',
+    #                    bounds=[beta_range, gamma_range, eta_range])
+
+    beta = para_best[0]
+    betaEI = para_best[1]
+    gamma = para_best[2]
+    eta = para_best[3]
+    theta = para_best[4]
+    Geo = para_best[5]
+    # c1 = para_best[6]
+    size = len(confirmed)
+    S = [n_0 * eta]
+    E = [0]
+    I = [confirmed.iloc[0]]
+    R = [0]
+    G = [confirmed.iloc[0]]
+    for i in range(1, size):
+        delta = SEIRG(i, [S[i - 1], E[i - 1], I[i - 1], R[i - 1], G[i - 1], beta, betaEI, gamma, eta, n_0])
+        S.append(S[-1] + delta[0])
+        E.append(E[-1] + delta[1])
+        I.append(I[-1] + delta[2])
+        R.append(R[-1] + delta[3])
+        G.append(G[-1] + delta[4])
+
+    # print('beta:', beta_range[0], beta, beta_range[1])
+    # print('gamma:', gamma_range[0], gamma, gamma_range[1])
+    # print('eta:', eta_range[0], eta, eta_range[1])
+
+    # save simulation
+    c0 = ['S', 'E', 'I', 'R', 'G']
+    df = pd.DataFrame([S, E, I, R, G], columns=days[:len(S)])
+    df.insert(0, 'series', c0)
+    df.to_csv(f'50Counties/SEIR_{date}/{state}/sim.csv', index=False)
+
+    # save parameters
+    para_label = ['beta', 'betaEI', 'gamma', 'eta', 'theta', 'Geo', 'RMSE', 'R2']
+    RMSE = math.sqrt(mean_squared_error(confirmed, G))
+    r2 = r2_score(confirmed, G)
+    para_best = np.append(para_best, RMSE)
+    para_best = np.append(para_best, r2)
+    # para_best.append(RMSE)
+    df = pd.DataFrame([para_best], columns=para_label)
+    df.to_csv(f'50Counties/SEIR_{date}/{state}/para.csv', index=False)
+
+    days = days[:size]
+    days = [datetime.datetime.strptime(d, '%Y-%m-%d') for d in days]
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.set_title(state)
+    ax.plot(days, G, label='G')
+    ax.plot(days, confirmed, label='confirm')
+    fig.autofmt_xdate()
+    ax.legend()
+    fig.savefig(f'50Counties/SEIR_{date}/{state}/fit.png', bbox_inches="tight")
     plt.close(fig)
     # plt.show()
 
@@ -824,17 +951,42 @@ def fit_SEIR_SD(confirmed, n_0):
     for c1 in np.arange(c1_range[0], c1_range[1], 0.01):
         for Geo in Geo_range:
             for theta in theta_range:
-                optimal = minimize(loss_SEIR_SD, [uni(beta_SEIR_range[0], beta_SEIR_range[1]),
+                optimal = minimize(loss_SEIR_SD, [uni(beta_SEIR_SD_range[0], beta_SEIR_SD_range[1]),
                                                   uni(betaEI_range[0], betaEI_range[1]),
                                                   uni(gamma_range[0], gamma_range[1]),
                                                   uni(eta_range[0], eta_range[1])],
                                    args=(confirmed, n_0, SEIRG_sd, theta, Geo, c1), method='L-BFGS-B',
-                                   bounds=[beta_SEIR_range, betaEI_range, gamma_range, eta_range])
+                                   bounds=[beta_SEIR_SD_range, betaEI_range, gamma_range, eta_range])
                 current_loss = loss_SEIR_SD(optimal.x, confirmed, n_0, SEIRG_sd, theta, Geo, c1)
                 if current_loss < min_loss:
                     min_loss = current_loss
                     [beta, betaEI, gamma, eta] = optimal.x
                     para_best = [beta, betaEI, gamma, eta, theta, Geo, c1]
+
+    return current_loss, para_best
+
+
+def fit_SEIR(confirmed, n_0):
+    # S, I, R, G, days = read_sim(state, SimFolder)
+    # start_date = days[0]
+    # # reopen_date = dates[0]
+    np.random.seed()
+
+    para_best = []
+    min_loss = 1000001
+    for Geo in Geo_range:
+        for theta in theta_range:
+            optimal = minimize(loss_SEIR, [uni(beta_SEIR_range[0], beta_SEIR_range[1]),
+                                           uni(betaEI_range[0], betaEI_range[1]),
+                                           uni(gamma_range[0], gamma_range[1]),
+                                           uni(eta_range[0], eta_range[1])],
+                               args=(confirmed, n_0, SEIRG_sd, theta, Geo), method='L-BFGS-B',
+                               bounds=[beta_SEIR_range, betaEI_range, gamma_range, eta_range])
+            current_loss = loss_SEIR(optimal.x, confirmed, n_0, SEIRG, theta, Geo)
+            if current_loss < min_loss:
+                min_loss = current_loss
+                [beta, betaEI, gamma, eta] = optimal.x
+                para_best = [beta, betaEI, gamma, eta, theta, Geo]
 
     return current_loss, para_best
 
@@ -884,6 +1036,40 @@ def loss_SEIR_SD(point, confirmed, n_0, SIRG, theta, Geo, c1):
     G = [confirmed.iloc[0]]
     for i in range(1, size):
         delta = SIRG(i, [S[i - 1], E[i - 1], I[i - 1], R[i - 1], G[i - 1], beta, betaEI, gamma, eta, n_0, c1])
+        S.append(S[-1] + delta[0])
+        E.append(E[-1] + delta[1])
+        I.append(I[-1] + delta[2])
+        R.append(R[-1] + delta[3])
+        G.append(G[-1] + delta[4])
+        if S[-1] < 0:
+            return 1000000
+
+    confirmed_derivative = np.diff(confirmed)
+    G_derivative = np.diff(G)
+    weights = [Geo ** (n - 1) for n in range(1, size)]
+    weights.reverse()
+    confirmed_derivative *= weights
+    G_derivative *= weights
+
+    metric0 = r2_score(confirmed, G)
+    metric1 = r2_score(confirmed_derivative, G_derivative)
+    return - (theta * metric0 + (1 - theta) * metric1)
+
+
+def loss_SEIR(point, confirmed, n_0, SIRG, theta, Geo):
+    size = len(confirmed)
+    beta = point[0]
+    betaEI = point[1]
+    gamma = point[2]
+    eta = point[3]
+    # c1 = point[3]
+    S = [n_0 * eta]
+    E = [0]
+    I = [confirmed.iloc[0]]
+    R = [0]
+    G = [confirmed.iloc[0]]
+    for i in range(1, size):
+        delta = SIRG(i, [S[i - 1], E[i - 1], I[i - 1], R[i - 1], G[i - 1], beta, betaEI, gamma, eta, n_0])
         S.append(S[-1] + delta[0])
         E.append(E[-1] + delta[1])
         I.append(I[-1] + delta[2])
@@ -1727,8 +1913,10 @@ def main():
 
     # validate_all(validate_end_date)
     # scatter_RMSE_validate_all(validate_end_date)
-    fit_50_SEIR_SD()
-    fit_50more_SEIR_SD()
+    # fit_50_SEIR_SD()
+    # fit_50more_SEIR_SD()
+    fit_50_SEIR()
+    fit_50more_SEIR()
     return
 
 
