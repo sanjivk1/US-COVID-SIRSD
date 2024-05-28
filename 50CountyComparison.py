@@ -980,7 +980,7 @@ def fit_SEIR(confirmed, n_0):
                                            uni(betaEI_range[0], betaEI_range[1]),
                                            uni(gamma_range[0], gamma_range[1]),
                                            uni(eta_range[0], eta_range[1])],
-                               args=(confirmed, n_0, SEIRG_sd, theta, Geo), method='L-BFGS-B',
+                               args=(confirmed, n_0, SEIRG, theta, Geo), method='L-BFGS-B',
                                bounds=[beta_SEIR_range, betaEI_range, gamma_range, eta_range])
             current_loss = loss_SEIR(optimal.x, confirmed, n_0, SEIRG, theta, Geo)
             if current_loss < min_loss:
