@@ -21,6 +21,125 @@ def AIC_compare():
     out_df.to_csv('50Counties/comparison/AIC.csv', index=False)
 
 
+def AIC_compare_SEIR_SD():
+    states = ['AZ-Maricopa',
+              'CA-Los Angeles',
+              'CA-Orange',
+              'CA-Riverside',
+              'CA-San Bernardino',
+              'CA-San Diego',
+              'CO-Adams',
+              'CO-Arapahoe',
+              'CO-Denver',
+              'CT-Fairfield',
+              'CT-Hartford',
+              'CT-New Haven',
+              'DC-District of Columbia',
+              'DE-New Castle',
+              'DE-Sussex',
+              'FL-Broward',
+              'FL-Miami-Dade',
+              'FL-Palm Beach',
+              'GA-DeKalb',
+              'GA-Fulton',
+              'GA-Gwinnett',
+              'IA-Polk',
+              'IL-Cook',
+              'IL-DuPage',
+              'IL-Kane',
+              'IL-Lake',
+              'IL-Will',
+              'IN-Lake',
+              'IN-Marion',
+              'LA-East Baton Rouge',
+              'LA-Jefferson',
+              'LA-Orleans',
+              'MA-Bristol',
+              'MA-Essex',
+              'MA-Hampden',
+              'MA-Middlesex',
+              'MA-Norfolk',
+              'MA-Plymouth',
+              'MA-Suffolk',
+              'MA-Worcester',
+              'MD-Anne Arundel',
+              'MD-Baltimore',
+              'MD-Baltimore City',
+              'MD-Montgomery',
+              'MD-Prince George\'s',
+              'MI-Kent',
+              'MI-Macomb',
+              'MI-Oakland',
+              'MI-Wayne',
+              'MN-Hennepin',
+              'MO-St. Louis',
+              'NJ-Bergen',
+              'NJ-Burlington',
+              'NJ-Camden',
+              'NJ-Essex',
+              'NJ-Hudson',
+              'NJ-Mercer',
+              'NJ-Middlesex',
+              'NJ-Monmouth',
+              'NJ-Morris',
+              'NJ-Ocean',
+              'NJ-Passaic',
+              'NJ-Somerset',
+              'NJ-Union',
+              'NV-Clark',
+              'NY-Bronx',
+              'NY-Dutchess',
+              'NY-Erie',
+              'NY-Kings',
+              'NY-Nassau',
+              'NY-New York',
+              'NY-Orange',
+              'NY-Queens',
+              'NY-Richmond',
+              'NY-Rockland',
+              'NY-Suffolk',
+              'NY-Westchester',
+              'OH-Cuyahoga',
+              'OH-Franklin',
+              'PA-Berks',
+              'PA-Bucks',
+              'PA-Delaware',
+              'PA-Lehigh',
+              'PA-Luzerne',
+              'PA-Montgomery',
+              'PA-Northampton',
+              'PA-Philadelphia',
+              'RI-Providence',
+              'SD-Minnehaha',
+              'TN-Davidson',
+              'TN-Shelby',
+              'TX-Dallas',
+              'TX-Harris',
+              'TX-Tarrant',
+              'UT-Salt Lake',
+              'VA-Fairfax',
+              'VA-Prince William',
+              'WA-King',
+              'WA-Snohomish',
+              'WI-Milwaukee']
+    # folder = '50Counties/comparison'
+    df_SD = pd.read_csv('50Counties/comparison/RMSE.csv')[['state', 'RMSE_G']]
+    para_SEIR_SD, para_SD = 5, 8
+    out_df = pd.DataFrame(columns=['state', 'AIC_SD', 'AIC_SEIR_SD', 'MSE_SD', 'MSE_SEIR_SD', 'sample size'])
+    for index, row in df_SD.iterrows():
+        state, RMSE_SD = row
+        n = pd.read_csv(f'50Counties/SEIR_SD_2020-05-15/{state}/sim.csv').shape[1] - 1
+        # print(n, state, RMSE_SD, RMSE_SIR)
+        MSE_SD = RMSE_SD ** 2
+        RMSE_SEIR_SD = pd.read_csv(f'50Counties/SEIR_SD_2020-05-15/{state}/para.csv')[['RMSE']].iloc[0, 0]
+        MSE_SEIR_SD = RMSE_SEIR_SD ** 2
+        AIC_SEIR_SD = n * np.log(MSE_SEIR_SD) + 2 * para_SEIR_SD
+        AIC_SD = n * np.log(MSE_SD) + 2 * para_SD
+        out_df.loc[len(out_df)] = [state, AIC_SD, AIC_SEIR_SD, MSE_SD, MSE_SEIR_SD, n]
+    # print(out_df.columns)
+    out_df.to_csv('50Counties/comparison/AIC_SEIR_SD.csv', index=False)
+
+
 def AIC_compare_SEIR():
     states = ['AZ-Maricopa',
               'CA-Los Angeles',
@@ -124,7 +243,7 @@ def AIC_compare_SEIR():
               'WI-Milwaukee']
     # folder = '50Counties/comparison'
     df_SD = pd.read_csv('50Counties/comparison/RMSE.csv')[['state', 'RMSE_G']]
-    para_SEIR, para_SD = 5, 8
+    para_SEIR, para_SD = 4, 8
     out_df = pd.DataFrame(columns=['state', 'AIC_SD', 'AIC_SEIR', 'MSE_SD', 'MSE_SEIR', 'sample size'])
     for index, row in df_SD.iterrows():
         state, RMSE_SD = row
@@ -191,4 +310,5 @@ if __name__ == '__main__':
     # AIC_boxplot()
     # AIC_scatter()
     # AIC_hist()
+    # AIC_compare_SEIR_SD()
     AIC_compare_SEIR()
