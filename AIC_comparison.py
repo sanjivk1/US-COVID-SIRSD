@@ -310,5 +310,5 @@ if __name__ == '__main__':
     # AIC_boxplot()
     # AIC_scatter()
     # AIC_hist()
-    # AIC_compare_SEIR_SD()
-    AIC_compare_SEIR()
+    AIC_compare_SEIR_SD()
+    # AIC_compare_SEIR()

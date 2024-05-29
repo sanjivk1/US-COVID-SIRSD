@@ -36,7 +36,7 @@ theta2 = 0.8
 
 I_0 = 5
 beta_range = (0.1, 100)
-beta_SEIR_range = (0.1, 50)
+beta_SEIR_range = (0.1, 100)
 beta_SEIR_SD_range = (0.1, 100)
 betaEI_range = (0.1, 0.5)
 gamma_range = (0.04, 0.2)
@@ -1913,10 +1913,10 @@ def main():
 
     # validate_all(validate_end_date)
     # scatter_RMSE_validate_all(validate_end_date)
-    # fit_50_SEIR_SD()
-    # fit_50more_SEIR_SD()
-    fit_50_SEIR()
-    fit_50more_SEIR()
+    fit_50_SEIR_SD()
+    fit_50more_SEIR_SD()
+    # fit_50_SEIR()
+    # fit_50more_SEIR()
     return
 
 

@@ -146,8 +146,8 @@ def report_SEIR():
 def report_para():
     # report_init_comparison()
     # report_sd_full()
-    # report_SEIR_SD()
-    report_SEIR()
+    report_SEIR_SD()
+    # report_SEIR()
     return
 
 
