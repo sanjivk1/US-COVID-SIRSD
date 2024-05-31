@@ -15,6 +15,7 @@ from numpy.random import uniform as uni
 import os
 import warnings
 from matplotlib.dates import DateFormatter
+import matplotlib.ticker as mtick
 import matplotlib.dates as mdates
 
 # matplotlib.use('Agg')
@@ -1483,6 +1484,51 @@ def compare_state(state, out_df, ax):
     return
 
 
+def compare_state_axes(state):
+    print(state)
+    SimFolder = f'50Counties/init_only_{end_date}/{state}'
+    # SimFolder = f'init_only_{end_date}/{state}'
+    S, I, IH, IN, R, D, G, H, days = read_sim(state, SimFolder)
+    start_date = days[0]
+    end_date2 = days[-1]
+
+    SIRFolder = f'50Counties/SIR/{state}'
+    S2, I2, R2, G2, days2 = read_SIR(state, SIRFolder)
+
+    ConfirmFile = 'JHU/JHU_Confirmed-counties.csv'
+    df = pd.read_csv(ConfirmFile)
+    confirmed = df[df.iloc[:, 0] == state]
+    confirmed = confirmed.iloc[0].loc[start_date: end_date2]
+
+    days2 = make_datetime(days[0], len(days2))
+
+    PopFile = 'JHU/CountyPopulation.csv'
+    df = pd.read_csv(PopFile)
+    n_0 = df[df.iloc[:, 0] == state].iloc[0]['POP']
+
+    # fig.autofmt_xdate()
+    # plt.show()
+    fig = plt.figure()
+    ax1 = fig.add_subplot()
+    ax1.plot(days2, [i / 1000 for i in confirmed], linewidth=3, linestyle=':', label='Cumulative Cases')
+    ax1.plot(days2, [i / 1000 for i in G], label='SIR-SD')
+    ax1.plot(days2, [i / 1000 for i in G2], label='SIR')
+    ax1.set_title(state)
+    ax1.set_ylabel('Cases (Thousand)')
+    ax1.legend()
+
+    ax2 = ax1.twinx()
+    lower, upper = ax1.get_ylim()
+    ax2.set_ylim(lower * 1000 / n_0, upper * 1000 / n_0)
+    ax2.set_ylabel('Population')
+    ax2.yaxis.set_major_formatter(mtick.PercentFormatter(xmax=1))
+
+    fig.autofmt_xdate()
+    fig.savefig(f'50Counties/comparison/2axes_{state}.png', bbox_inches="tight")
+    plt.close(fig)
+    return
+
+
 def read_SIR(state, SimFolder):
     # ParaFile = f'{SimFolder}/para.csv'
     SimFile = f'{SimFolder}/sim.csv'
@@ -1889,6 +1935,13 @@ def plot_RMSE_MAE_MAPE():
     return
 
 
+def two_axes_comparison():
+    states_2axes = ['FL-Miami-Dade', 'IL-Cook', 'NJ-Hudson', 'NY-New York']
+    for state in states_2axes:
+        compare_state_axes(state)
+    return
+
+
 def main():
     # fit_50_init()
     # fit_50more_init()
@@ -1913,10 +1966,12 @@ def main():
 
     # validate_all(validate_end_date)
     # scatter_RMSE_validate_all(validate_end_date)
-    fit_50_SEIR_SD()
-    fit_50more_SEIR_SD()
+    # fit_50_SEIR_SD()
+    # fit_50more_SEIR_SD()
     # fit_50_SEIR()
     # fit_50more_SEIR()
+
+    two_axes_comparison()
     return
 
 
