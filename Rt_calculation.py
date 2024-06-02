@@ -405,11 +405,13 @@ def R0_para_all():
     sd_folder = f'50Counties/init_only_2020-08-31'
     SIR_folder = f'50Counties/SIR'
     SEIR_folder = '50Counties/SEIR_2020-05-15'
+    SEIR_SD_folder = '50Counties/SEIR_SD_2020-05-15'
     if not os.path.exists(folder):
         os.makedirs(folder)
     R0s_sd = []
     R0s_SIR = []
     R0s_SEIR = []
+    R0s_SEIR_SD = []
     for state in states:
         # SIR-sd
         df = pd.read_csv(f'{sd_folder}/{state}/para.csv')
@@ -432,13 +434,22 @@ def R0_para_all():
         bEI = df['betaEI'].iloc[0]
         g = df['gamma'].iloc[0]
         e = df['eta'].iloc[0]
-        R0s_SEIR.append(b * e / (g + bEI))
+        R0s_SEIR.append(b * e / g)
 
-    df = pd.DataFrame(columns=['state', 'R0_SD', 'R0_SIR', 'R0_SEIR'])
+        #SEIR-SD
+        df = pd.read_csv(f'{SEIR_SD_folder}/{state}/para.csv')
+        b = df['beta'].iloc[0]
+        bEI = df['betaEI'].iloc[0]
+        g = df['gamma'].iloc[0]
+        e = df['eta'].iloc[0]
+        R0s_SEIR_SD.append(b * e / g)
+
+    df = pd.DataFrame(columns=['state', 'R0_SD', 'R0_SIR', 'R0_SEIR', 'R0_SEIR_SD'])
     df['state'] = states
     df['R0_SD'] = R0s_sd
     df['R0_SIR'] = R0s_SIR
     df['R0_SEIR'] = R0s_SEIR
+    df['R0_SEIR_SD'] = R0s_SEIR_SD
     df.to_csv(f'{folder}/R0_para.csv', index=False)
     return
 
