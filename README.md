@@ -1,4 +1,4 @@
-# This is a python package to fit and forecast the COVID-19 infection dynamics based on the paper "Hidden ParametersHidden Parameters Impacting Resurgence of SARS-CoV-2 Pandemic."
+# Python package to fit and forecast the COVID-19 infection dynamics based on the paper "Hidden ParametersHidden Parameters Impacting Resurgence of SARS-CoV-2 Pandemic."
 
 
 ## Fitting is done by the python package scipy.optimize with randomized initial parameters and their ranges with multiprocessing.
