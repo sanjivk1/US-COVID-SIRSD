@@ -2,6 +2,43 @@
 Based on the paper "Hidden ParametersHidden Parameters Impacting Resurgence of SARS-CoV-2 Pandemic."
 
 
+The equations used are:
+
+\begin{figure}[h!]
+\begin{center}
+\resizebox{0.6\textwidth}{!}{
+\begin{tikzpicture}[->,>=stealth',shorten >=2pt, line width=2pt, 
+                                  node distance=2cm, style ={minimum size=20mm}]
+\tikzstyle{every node}=[font=\Large]
+\node [rectangle, draw, font=\Huge] (S) {$S$};
+\node [rectangle, draw, font=\Huge] (L) [below=of S] {$L$};
+\node [rectangle, draw, font=\Huge] (I) [right=of S] {$I$};
+\node [rectangle, draw, font=\Huge] (I_H) [right=of I] {$I_H$};
+\node [rectangle, draw, font=\Huge] (I_N) [below=of I_H] {$I_N$};
+\node [rectangle, draw, font=\Huge] (D) [right=of I_H] {$D$};
+\node [rectangle, draw, font=\Huge] (R) [right=of I_N] {$R$};
+
+\draw[->] (L) -- node [right=-0.4] {$\kappa_1$} (S);
+\draw[->] (S) -- node [above=-0.5] {
+$\beta SI/N$
+} (I);
+\draw[->] (I) -- node [above=-0.5] {$ \gamma I$
+} (I_H);
+\draw[->] (I) -- node [left=0.2] {$\gamma_2 I$
+} (I_N);
+\draw[->] (I_H) --node [above=-0.5] {$\alpha_2 I_H$
+} (D);
+\draw[->] (I_H) --node [right] {$\alpha_1 I_H$
+} (R);
+\draw[->] (I_N) --node [below=-0.5] {$\alpha_3 I_N$
+} (R);
+\end{tikzpicture}
+}
+\end{center}
+    \caption{The SIR-SD-L Compartment Model incorporating lockdown removal}
+    \label{fig:model}
+\end{figure}
+
 ## Fitting:
 Uses python package scipy.optimize with randomized initial parameters and their ranges with multiple threads for
 multiple starting points.
