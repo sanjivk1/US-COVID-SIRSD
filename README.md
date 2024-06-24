@@ -3,41 +3,14 @@ Based on the paper "Hidden ParametersHidden Parameters Impacting Resurgence of S
 
 
 The equations used are:
+\begin{align}
+\frac{\mathrm{d}S}{\mathrm{d}t} &= - \beta SI/N + \kappa_1;&\frac{\mathrm{d}I}{\mathrm{d}t} &= \beta SI/N -(\gamma+\gamma_2) I;\\
+\frac{\mathrm{d}I_H}{\mathrm{d}t} &=   \gamma I - (\alpha_1 + \alpha_2) I_H; &\frac{\mathrm{d}I_N}{\mathrm{d}t} &=   \gamma_2 I - \alpha_3 I_N; \\ 
+\frac{\mathrm{d}D}{\mathrm{d}t} &= \alpha_2 I_H;&\frac{\mathrm{d}R}{\mathrm{d}t}  &=  \alpha_1 I_H + \alpha_3 I_N; \\
+\frac{\mathrm{d}G}{\mathrm{d}t} &=  \beta SI/N ;&\frac{\mathrm{d} L}{\mathrm{d}t} &=  - \kappa_1  ;
+\end{align}
 
-\begin{figure}[h!]
-\begin{center}
-\resizebox{0.6\textwidth}{!}{
-\begin{tikzpicture}[->,>=stealth',shorten >=2pt, line width=2pt, 
-                                  node distance=2cm, style ={minimum size=20mm}]
-\tikzstyle{every node}=[font=\Large]
-\node [rectangle, draw, font=\Huge] (S) {$S$};
-\node [rectangle, draw, font=\Huge] (L) [below=of S] {$L$};
-\node [rectangle, draw, font=\Huge] (I) [right=of S] {$I$};
-\node [rectangle, draw, font=\Huge] (I_H) [right=of I] {$I_H$};
-\node [rectangle, draw, font=\Huge] (I_N) [below=of I_H] {$I_N$};
-\node [rectangle, draw, font=\Huge] (D) [right=of I_H] {$D$};
-\node [rectangle, draw, font=\Huge] (R) [right=of I_N] {$R$};
 
-\draw[->] (L) -- node [right=-0.4] {$\kappa_1$} (S);
-\draw[->] (S) -- node [above=-0.5] {
-$\beta SI/N$
-} (I);
-\draw[->] (I) -- node [above=-0.5] {$ \gamma I$
-} (I_H);
-\draw[->] (I) -- node [left=0.2] {$\gamma_2 I$
-} (I_N);
-\draw[->] (I_H) --node [above=-0.5] {$\alpha_2 I_H$
-} (D);
-\draw[->] (I_H) --node [right] {$\alpha_1 I_H$
-} (R);
-\draw[->] (I_N) --node [below=-0.5] {$\alpha_3 I_N$
-} (R);
-\end{tikzpicture}
-}
-\end{center}
-    \caption{The SIR-SD-L Compartment Model incorporating lockdown removal}
-    \label{fig:model}
-\end{figure}
 
 ## Fitting:
 Uses python package scipy.optimize with randomized initial parameters and their ranges with multiple threads for
