@@ -15,8 +15,7 @@ $$\frac{\mathrm{d}D}{\mathrm{d}t} = \alpha_2 I_H;$$
 
 $$\frac{\mathrm{d}R}{\mathrm{d}t}=  \alpha_1 I_H + \alpha_3 I_N; $$
 
-$$\frac{\mathrm{d}G}{\mathrm{d}t} =  \beta SI/N ; &\frac{\mathrm{d} L}{\mathrm{d}t} =  - \kappa_1  ;
-$$
+$$\frac{\mathrm{d}G}{\mathrm{d}t} =  \beta SI/N ; \frac{\mathrm{d} L}{\mathrm{d}t} =  - \kappa_1  ;$$
 
 NOTE: The variable L is replaced by H in the code.
 
