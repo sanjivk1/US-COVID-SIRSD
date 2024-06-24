@@ -10,7 +10,8 @@ $$
 \frac{\mathrm{d}I_H}{\mathrm{d}t} &=   \gamma I - (\alpha_1 + \alpha_2) I_H;$$
 
 $$\frac{\mathrm{d}I_N}{\mathrm{d}t} &=   \gamma_2 I - \alpha_3 I_N; $$
-\frac{\mathrm{d}D}{\mathrm{d}t} &= \alpha_2 I_H;&\frac{\mathrm{d}R}{\mathrm{d}t}  &=  \alpha_1 I_H + \alpha_3 I_N; \\
+
+$$\frac{\mathrm{d}D}{\mathrm{d}t} &= \alpha_2 I_H;&\frac{\mathrm{d}R}{\mathrm{d}t}  &=  \alpha_1 I_H + \alpha_3 I_N; \\
 \frac{\mathrm{d}G}{\mathrm{d}t} &=  \beta SI/N ;&\frac{\mathrm{d} L}{\mathrm{d}t} &=  - \kappa_1  ;
 $$
 
