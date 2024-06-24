@@ -1,21 +1,24 @@
 # Python package to fit and forecast the COVID-19 infection dynamics in US Counties.
 Based on the paper "Hidden ParametersHidden Parameters Impacting Resurgence of SARS-CoV-2 Pandemic."
-
+$SIR$
 
 The equations used are:
+$$\frac{\mathrm{d}S}{\mathrm{d}t} = - \beta SI/N + \kappa_1;$$
+
+$$\frac{\mathrm{d}I}{\mathrm{d}t} = \beta SI/N -(\gamma+\gamma_2) I;$$
+
+$$\frac{\mathrm{d}I_H}{\mathrm{d}t} =   \gamma I - (\alpha_1 + \alpha_2) I_H;$$
+
+$$\frac{\mathrm{d}I_N}{\mathrm{d}t} =   \gamma_2 I - \alpha_3 I_N; $$
+
+$$\frac{\mathrm{d}D}{\mathrm{d}t} = \alpha_2 I_H;$$
+
+$$\frac{\mathrm{d}R}{\mathrm{d}t}=  \alpha_1 I_H + \alpha_3 I_N; $$
+
+$$\frac{\mathrm{d}G}{\mathrm{d}t} =  \beta SI/N ; &\frac{\mathrm{d} L}{\mathrm{d}t} =  - \kappa_1  ;
 $$
-\frac{\mathrm{d}S}{\mathrm{d}t} = - \beta SI/N + \kappa_1;$$
-$$\frac{\mathrm{d}I}{\mathrm{d}t} &= \beta SI/N -(\gamma+\gamma_2) I;$$
-$$
-\frac{\mathrm{d}I_H}{\mathrm{d}t} &=   \gamma I - (\alpha_1 + \alpha_2) I_H;$$
 
-$$\frac{\mathrm{d}I_N}{\mathrm{d}t} &=   \gamma_2 I - \alpha_3 I_N; $$
-
-$$\frac{\mathrm{d}D}{\mathrm{d}t} &= \alpha_2 I_H;&\frac{\mathrm{d}R}{\mathrm{d}t}  &=  \alpha_1 I_H + \alpha_3 I_N; \\
-\frac{\mathrm{d}G}{\mathrm{d}t} &=  \beta SI/N ;&\frac{\mathrm{d} L}{\mathrm{d}t} &=  - \kappa_1  ;
-$$
-
-
+NOTE: The variable L is replaced by H in the code.
 
 ## Fitting:
 Uses python package scipy.optimize with randomized initial parameters and their ranges with multiple threads for
@@ -30,7 +33,9 @@ In the second phase a linear release of population was fitted.
 The forecast uses the best parameters acquired by the fitting.
 
 ## How to use
-The main code to be used is : MultiPhase_JHU50.py
+The main code to be used is : MultiPhase_JHU50.py 
+
+All other files are for testing, statistics, plots, library functions
 
 The key subroutine used is the minimize from scipy.optimize
 
